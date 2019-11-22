@@ -5,7 +5,7 @@ end
 
 if CLIENT then
 
-SWEP.PrintName			= "Rapid Fire Rocket Launcher for Giant Soldier"
+SWEP.PrintName			= "Quad Launcher"
 SWEP.Slot				= 0
 SWEP.RenderGroup 		= RENDERGROUP_BOTH
 
@@ -32,8 +32,8 @@ end
 
 SWEP.Base				= "tf_weapon_gun_base"
 
-SWEP.ViewModel			= "models/weapons/v_models/v_rocketlauncher_soldier.mdl"
-SWEP.WorldModel			= "models/weapons/w_models/w_rocketlauncher.mdl"
+SWEP.ViewModel			= "models/weapons/v_models/v_quad.mdl"
+SWEP.WorldModel			= "models/weapons/w_models/w_quadtest.mdl"
 SWEP.Crosshair = "tf_crosshair3"
 
 SWEP.Spawnable = true
@@ -43,17 +43,17 @@ SWEP.Category = "Team Fortress 2"
 SWEP.MuzzleEffect = "muzzle_pipelauncher"
 PrecacheParticleSystem("muzzle_pipelauncher")
 
-SWEP.ShootSound = Sound("MVM.GiantSoldierRocketShoot")
-SWEP.ShootCritSound = Sound("MVM.GiantSoldierRocketShootCrit")
+SWEP.ShootSound = Sound("weapons/quake_rpg_fire_remastered.wav")
+SWEP.ShootCritSound = Sound("weapons/quake_rpg_fire_remastered.wav")
 SWEP.ChargeSound = Sound("Weapon_StickyBombLauncher.ChargeUp")
-SWEP.ReloadSound = Sound("MVM.RobotImpactSoft")
+SWEP.ReloadSound = Sound("weapons/tommy_bolt_forward.wav")
 
-SWEP.Primary.ClipSize		= 20
+SWEP.Primary.ClipSize		= 4
 SWEP.Primary.DefaultClip	= SWEP.Primary.ClipSize
-SWEP.Primary.Delay          = 0.25
+SWEP.Primary.Delay          = 0.1
 
 SWEP.IsRapidFire = true
-SWEP.ReloadSingle = true
+SWEP.ReloadSingle = false
 
 SWEP.HoldType = "PRIMARY"
 SWEP.HoldTypeHL2 = "rpg"
@@ -67,14 +67,14 @@ SWEP.Properties = {}
 SWEP.ChargeTime = 2
 SWEP.MinForce = 150
 SWEP.MaxForce = 2800
-
+SWEP.BaseDamage = 40
 SWEP.MinAddPitch = -1
 SWEP.MaxAddPitch = -6
 
 SWEP.MinGravity = 1
 SWEP.MaxGravity = 1
 SWEP.BulletSpread = 7
-SWEP.ReloadTime = 0.1
+SWEP.ReloadTime = 5
 function SWEP:Deploy()
 	if CLIENT then
 		HudBowCharge:SetProgress(0)
@@ -150,7 +150,7 @@ function SWEP:ShootProjectile()
 		rocket.BaseSpeed = 2200
 		
 		rocket:SetAngles(ang)
-		rocket.ExplosionSound = "MVM.GiantSoldierRocketExplode"
+		rocket.ExplosionSound = Sound(")weapons/quake_explosion_remastered1.wav")
 		if self:Critical() then
 			rocket.critical = true
 		end

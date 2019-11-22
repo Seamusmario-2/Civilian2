@@ -36,8 +36,8 @@ PrecacheParticleSystem("muzzle_scattergun")
 
 SWEP.BaseDamage = 18
 SWEP.DamageRandomize = 0.5
-SWEP.MaxDamageRampUp = 0.8
-SWEP.MaxDamageFalloff = 0.3
+SWEP.MaxDamageRampUp = 1.6
+SWEP.MaxDamageFalloff = 1.2
 
 SWEP.BulletsPerShot = 10
 SWEP.BulletSpread = 0.0675
@@ -129,9 +129,7 @@ end
 
 function SWEP:PrimaryAttack()
 	if not self:CallBaseFunction("PrimaryAttack") then return end
-	if SERVER and self.ScattergunHasKnockback then
-		self:DoOwnerKnockback()
-	end
+2	end
 	self.Owner:DoAnimationEvent(ACT_MERC_ATTACK_STAND_SUPERSHOTGUN)
 	return
 end

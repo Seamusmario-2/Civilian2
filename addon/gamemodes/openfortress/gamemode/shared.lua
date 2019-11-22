@@ -738,6 +738,34 @@ sound.Add( {
 	sound = { "weapons/pistol_clipin.wav" } 
 } )
 sound.Add( {
+	name = "Weapon_Tommmygun.DrumIn",
+	volume = 1.0,
+	level = 90,
+	pitch = { 92,103 },
+	sound = { "weapons/tommy_drum_in.wav" } 
+} )
+sound.Add( {
+	name = "Weapon_Tommmygun.DrumOut",
+	volume = 1.0,
+	level = 90,
+	pitch = { 92,103 },
+	sound = { "weapons/tommy_drum_out.wav" } 
+} )
+sound.Add( {
+	name = "Weapon_Tommmygun.BoltBack",
+	volume = 1.0,
+	level = 90,
+	pitch = { 92,103 },
+	sound = { "weapons/tommy_bolt_backward.wav" } 
+} )
+sound.Add( {
+	name = "Weapon_Tommmygun.BoltForward",
+	volume = 1.0,
+	level = 90,
+	pitch = { 92,103 },
+	sound = { "weapons/tommy_bolt_forward.wav" } 
+} )
+sound.Add( {
 	name = "Weapon_Pistol.ClipOut",
 	volume = 1.0,
 	level = 90,

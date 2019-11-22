@@ -31,7 +31,9 @@ function ENT:Think()
 		self:Show()
 		self.NextRespawn = nil
 	end
+	if SERVER then
 	self:SetAngles(self:GetAngles() + Angle(0, 10, 0))
+	end
 	if self:GetModel() == "models/weapons/w_models/w_rocketlauncher.mdl" then
 		self:SetModel("models/weapons/c_models/c_bet_rocketlauncher/c_bet_rocketlauncher.mdl")
 	end

@@ -108,16 +108,16 @@ PrecacheParticleSystem("bullet_tracer01_red_crit")
 PrecacheParticleSystem("bullet_tracer01_blue")
 PrecacheParticleSystem("bullet_tracer01_blue_crit")
 
-SWEP.BaseDamage = 4
+SWEP.BaseDamage = 8
 SWEP.DamageRandomize = 0
-SWEP.MaxDamageRampUp = 0.5
+SWEP.MaxDamageRampUp = 0.9
 SWEP.MaxDamageFalloff = 0.2
 
 SWEP.BulletsPerShot = 4
 SWEP.BulletSpread = 0.08
 
 SWEP.Primary.ClipSize		= -1
-SWEP.Primary.Ammo			= TF_SECONDARY
+SWEP.Primary.Ammo			= TF_PRIMARY
 SWEP.Primary.Delay          = 0.08
 
 SWEP.Secondary.Delay          = 0.1

@@ -734,7 +734,7 @@ hook.Add("StartCommand", "leadbot_control", function(bot, cmd)
 end)
 
 hook.Add("PostPlayerDeath", "leadbot_respawn", function(bot)
-	timer.Simple(2, function() if bot.LKBot and !bot:Alive() then bot:Spawn() end end)
+	timer.Simple(8, function() if bot.LKBot and !bot:Alive() then bot:Spawn() end end)
 end)
 
 function table.EqualValues(t1,t2,ignore_mt)

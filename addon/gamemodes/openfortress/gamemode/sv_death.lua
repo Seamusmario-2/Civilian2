@@ -759,6 +759,8 @@ function GM:DoPlayerDeath(ply, attacker, dmginfo)
 	
 		if ply:GetMaterial() == "models/shadertest/predator" then return end
 		ply:RandomSentence("ExplosionDeath")
+		ply:EmitSound("player/gib"..math.random(1,3)..".wav", 95)
+		ply:EmitSound("player/gibexplosion"..math.random(1,3)..".wav", 95)
 		local p = player_gib_probability:GetFloat()
 		p = 1
 		
