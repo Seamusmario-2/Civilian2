@@ -352,6 +352,7 @@ function GM:SetupNPCRagdoll(ent, rag)
 		self:DecapitateRagdoll(rag, ent, dp)
 	elseif ent:HasDeathFlag(DF_HEADSHOT) then
 		PlayDeathPose(rag, HeadshotDeathPose)
+		self:DecapitateRagdoll(rag, ent, dp) 
 	elseif ent.LastDamageInfo == DMG_BLAST then
 		rag:Fire("Kill", "", 0.1)
 	end

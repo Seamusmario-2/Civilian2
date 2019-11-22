@@ -130,7 +130,7 @@ hook.Add("InitPostEntity", "tf_InitSpawnables", function()
 end)
 
 function GM:PlayerInitialSpawn(ply)
-	ply:SetTeam(TEAM_RED)
+	ply:SetTeam(TEAM_NEUTRAL)
 	ply:KillSilent()
 	-- Wait until InitPostEntity has been called
 	if not self.PostEntityDone then
@@ -146,7 +146,7 @@ end
 
 function GM:OnPlayerChangedTeam(ply, oldteam, newteam)
 	if newteam == TEAM_SPECTATOR then
-		ply:SetTeam(TEAM_RED)
+		ply:SetTeam(TEAM_NEUTRAL)
 		local Pos = ply:EyePos()
 		ply:Spawn()
 		ply:SetPos( Pos )
@@ -546,13 +546,13 @@ function GM:PlayerSelectSpawn(pl)
 	return self.BaseClass:PlayerSelectSpawn(pl)
 end
 
-local PlayerGiveAmmoTypes = {tf_PRIMARY, tf_SECONDARY, tf_METAL}
+local PlayerGiveAmmoTypes = {TF_PRIMARY, TF_SECONDARY, TF_METAL}  
 function GM:GiveAmmoPercent(pl, pc, nometal)
 	--Msg("Giving "..pc.."% ammo to "..pl:GetName().." : ")
 	local ammo_given = false
 	
 	for _,v in ipairs(PlayerGiveAmmoTypes) do
-		if not nometal or v ~= tf_METAL then
+		if not nometal or v ~= TF_METAL then
 			if pl:GiveTFAmmo(pc * 0.01, v, true) then
 				ammo_given = true
 			end

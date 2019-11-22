@@ -1,4 +1,4 @@
-if game.SinglePlayer() or CLIENT or engine.ActiveGamemode() ~= "teamfortress" then return end
+if game.SinglePlayer() or CLIENT or engine.ActiveGamemode() ~= "openfortress" then return end
 
 local profiles = {}
 local bots = {}
@@ -6,7 +6,7 @@ local bots = {}
 --local names = {"LeadKiller", "A Random Person", "Foxie117", "G.A.M.E.R v24", "Agent Agrimar"}
 --local names = {"A Professional With Standards", "AimBot", "AmNot", "Aperture Science Prototype XR7", "Archimedes!", "BeepBeepBoop", "Big Mean Muther Hubbard", "Black Mesa", "BoomerBile", "Cannon Fodder", "CEDA", "Chell", "Chucklenuts", "Companion Cube", "Crazed Gunman", "CreditToTeam", "CRITRAWKETS", "Crowbar", "CryBaby", "CrySomeMore", "C++", "DeadHead", "Delicious Cake", "Divide by Zero", "Dog", "Force of Nature", "Freakin' Unbelievable", "Gentlemanne of Leisure", "GENTLE MANNE of LEISURE ", "GLaDOS", "Glorified Toaster with Legs", "Grim Bloody Fable", "GutsAndGlory!", "Hat-Wearing MAN", "Headful of Eyeballs", "Herr Doktor", "HI THERE", "Hostage", "Humans Are Weak", "H@XX0RZ", "I LIVE!", "It's Filthy in There!", "IvanTheSpaceBiker", "Kaboom!", "Kill Me", "LOS LOS LOS", "Maggot", "Mann Co.", "Me", "Mega Baboon", "Mentlegen", "Mindless Electrons", "MoreGun", "Nobody", "Nom Nom Nom", "NotMe", "Numnutz", "One-Man Cheeseburger Apocalypse", "Poopy Joe", "Pow!", "RageQuit", "Ribs Grow Back", "Saxton Hale", "Screamin' Eagles", "SMELLY UNFORTUNATE", "SomeDude", "Someone Else", "Soulless", "Still Alive", "TAAAAANK!", "Target Practice", "ThatGuy", "The Administrator", "The Combine", "The Freeman", "The G-Man", "THEM", "Tiny Baby Man", "Totally Not A Bot", "trigger_hurt", "WITCH", "ZAWMBEEZ", "Ze Ubermensch", "Zepheniah Mann", "0xDEADBEEF", "10001011101"}
 local names = {"TFBot"}
-local classtb = {"scout","scout","scout","soldier","soldier","soldier","soldier","pyro","pyro","pyro","pyro","pyro","pyro","demoman","demoman","demoman","demoman","demoman","heavy","heavy","heavy","heavy","heavy","spy","spy","spy","sniper","sniper","engineer","engineer","engineer","engineer","engineer","engineer","medic","medic","medic","medic","demoknight","ubermedic"}
+local classtb = {"mercenary","mercenary","mercenary","mercenary","mercenary","mercenary","mercenary","mercenary","mercenary","mercenary","mercenary","mercenary","mercenary","mercenary","mercenary","mercenary","mercenary","mercenary","mercenary","mercenary","scout","scout","scout","soldier","soldier","soldier","soldier","pyro","pyro","pyro","pyro","pyro","pyro","demoman","demoman","demoman","demoman","demoman","heavy","heavy","heavy","heavy","heavy","spy","spy","spy","sniper","sniper","engineer","engineer","engineer","engineer","engineer","engineer","medic","medic","medic","medic","demoknight","ubermedic"}
 --local classtb = {"demoknight"}
 local classtbmvm = {"scout","scout","scout","soldier","soldier","soldier","soldier","pyro","pyro","pyro","pyro","pyro","pyro","demoman","demoman","demoman","demoman","demoman","heavy","heavy","heavy","heavy","heavy","spy","spy","spy","sniper","sniper","engineer","engineer","engineer","engineer","engineer","engineer","medic","medic","medic","medic","sentrybuster","giantscout","giantpyro","giantheavy","giantsoldier","superscout","giantheavyshotgun","giantheavyheater","giantsoldierrapidfire","giantsoldiercharged","soldierbuffed","soldierblackbox","soldierblackbox","soldierblackbox","soldierblackbox","soldierblackbox","soldierblackbox","soldierblackbox","soldierblackbox","soldierblackbox","soldierbuffed","soldierbuffed","demoknight","demoknight","demoknight","demoknight","demoknight","demoknight","demoknight","soldierbuffed","soldierbuffed","soldierbuffed","heavyshotgun","heavyshotgun","heavyshotgun","heavyshotgun","heavyweightchamp","heavyweightchamp","heavyweightchamp","heavyweightchamp","melee_scout","melee_scout","melee_scout","melee_scout","melee_scout","melee_scout","melee_scout","melee_scout","melee_scout","ubermedic","ubermedic","ubermedic","ubermedic","ubermedic","ubermedic"}
 --local classtbmvm = {"combinesoldier","combinesoldier"}
@@ -483,7 +483,7 @@ hook.Add("StartCommand", "leadbot_control", function(bot, cmd)
 
 		--[[if BotCanTarget and !IsValid(bot.TargetEnt) and (bot:GetPlayerClass() ~= "medic" or (bot:GetPlayerClass() == "medic" and bot:GetActiveWeapon() and bot:GetActiveWeapon():GetClass() ~= "tf_weapon_medigun")) then
 			for k, v in pairs(ents.GetAll()) do
-				if (v:IsNPC() or v:GetClass() == "obj_sentrygun" or v:IsPlayer())
+				if (v:IsNPC() or v:GetClass() == "obj_sentrygun" or v:IsPlayer()) 
 				and (GAMEMODE:EntityTeam(v) ~= bot:Team() or GAMEMODE:EntityTeam(v) == TEAM_NEUTRAL)
 				and v ~= bot and v:Alive() and v:IsBot() then --and v:GetPos():Distance(bot:GetPos()) < 350 then
 					local headbone = v:LookupBone("ValveBiped.Bip01_Head1")

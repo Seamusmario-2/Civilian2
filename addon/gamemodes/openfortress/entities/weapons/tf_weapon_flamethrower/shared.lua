@@ -28,7 +28,7 @@ function SWEP:SetFlamethrowerEffect(i)
 	local t = GAMEMODE:EntityTeam(self.Owner)
 	
 	if i==1 then
-		effect = "flamethrower_new"
+		effect = "flamethrower"
 	elseif i>1 then
 		if t==2 then
 			effect = "flamethrower_crit_blue"
@@ -73,7 +73,7 @@ end
 
 PrecacheParticleSystem("flamethrower_fire_1")
 PrecacheParticleSystem("flamethrower_crit_red")
-PrecacheParticleSystem("flamethrower_new")
+PrecacheParticleSystem("flamethrower")
 PrecacheParticleSystem("flamethrower_crit_blue")
 PrecacheParticleSystem("pyro_blast")
 PrecacheParticleSystem("pyro_blast_flash")
@@ -83,7 +83,7 @@ PrecacheParticleSystem("pyro_blast_warp2")
 
 SWEP.Base				= "tf_weapon_gun_base"
 
-SWEP.ViewModel			= "models/weapons/c_models/c_pyro_arms.mdl"
+SWEP.ViewModel			= "models/weapons/v_models/v_flamethrower.mdl"
 SWEP.WorldModel			= "models/weapons/c_models/c_flamethrower/c_flamethrower.mdl"
 SWEP.Crosshair = "tf_crosshair3"
 

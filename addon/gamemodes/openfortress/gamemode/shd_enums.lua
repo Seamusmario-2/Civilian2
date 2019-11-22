@@ -1,11 +1,11 @@
 
 -- Ammo types (we are using implemented, but unused ammo types for the TF2 weapons)
 
-tf_PRIMARY		= "sniperround"
-tf_SECONDARY	= "sniperpenetratedround"
-tf_METAL		= "alyxgun"
-tf_GRENADES1	= "gaussenergy"
-tf_GRENADES2	= "striderminigun"
+TF_PRIMARY		= "sniperround"
+TF_SECONDARY	= "sniperpenetratedround"
+TF_METAL		= "alyxgun" 
+TF_GRENADES1	= "gaussenergy"
+TF_GRENADES2	= "striderminigun"
 
 -- Custom animation events
 

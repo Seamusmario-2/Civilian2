@@ -913,14 +913,14 @@ sound.Add( {
 	volume = 1.0,
 	level = 75,
 	pitch = { 100 },
-	sound = { "tf/physics/body/body_medium_impact_soft1.wav", "tf/physics/body/body_medium_impact_soft2.wav", "tf/physics/body/body_medium_impact_soft3.wav", "tf/physics/body/body_medium_impact_soft4.wav", "tf/physics/body/body_medium_impact_soft5.wav", "tf/physics/body/body_medium_impact_soft6.wav", "tf/physics/body/body_medium_impact_soft7.wav"} 
+	sound = { "physics/body/body_medium_impact_soft1.wav", "physics/body/body_medium_impact_soft2.wav", "physics/body/body_medium_impact_soft3.wav", "physics/body/body_medium_impact_soft4.wav", "physics/body/body_medium_impact_soft5.wav", "physics/body/body_medium_impact_soft6.wav", "physics/body/body_medium_impact_soft7.wav"} 
 } )
 sound.Add( {
 	name = "Flesh.ImpactHard",
 	volume = 1.0,
 	level = 75,
 	pitch = { 100 },
-	sound = { "tf/physics/body/body_medium_impact_hard1.wav", "tf/physics/body/body_medium_impact_hard2.wav", "tf/physics/body/body_medium_impact_hard3.wav", "tf/physics/body/body_medium_impact_hard4.wav", "tf/physics/body/body_medium_impact_hard5.wav", "tf/physics/body/body_medium_impact_hard6.wav"} 
+	sound = { "physics/body/body_medium_impact_hard1.wav", "physics/body/body_medium_impact_hard2.wav", "physics/body/body_medium_impact_hard3.wav", "physics/body/body_medium_impact_hard4.wav", "physics/body/body_medium_impact_hard5.wav", "physics/body/body_medium_impact_hard6.wav"} 
 } )
 
 sound.Add( {
@@ -1111,7 +1111,7 @@ sound.Add( {
 	level = 95,
 	pitch = { 92, 103 },
 	channel = CHAN_BODY,
-	sound = {"tf/player/footsteps/dirt1.wav","tf/player/footsteps/dirt3.wav","tf/player/footsteps/dirt2.wav","tf/player/footsteps/dirt4.wav"} 
+	sound = {"player/footsteps/dirt1.wav","player/footsteps/dirt3.wav","player/footsteps/dirt2.wav","player/footsteps/dirt4.wav"} 
 } )
 sound.Add( {
 	name = "Dirt.StepRight",
@@ -1119,7 +1119,7 @@ sound.Add( {
 	level = 95,
 	pitch = { 92, 103 },
 	channel = CHAN_BODY,
-	sound = {"tf/player/footsteps/dirt2.wav","tf/player/footsteps/dirt4.wav","tf/player/footsteps/dirt1.wav","tf/player/footsteps/dirt3.wav"} 
+	sound = {"player/footsteps/dirt2.wav","player/footsteps/dirt4.wav","player/footsteps/dirt1.wav","player/footsteps/dirt3.wav"} 
 } )
 sound.Add( {
 	name = "Grass.StepLeft",
@@ -1127,7 +1127,7 @@ sound.Add( {
 	level = 95,
 	pitch = { 92, 103 },
 	channel = CHAN_BODY,
-	sound = {"tf/player/footsteps/grass1.wav","tf/player/footsteps/grass3.wav","tf/player/footsteps/grass2.wav","tf/player/footsteps/grass4.wav"} 
+	sound = {"player/footsteps/grass1.wav","player/footsteps/grass3.wav","player/footsteps/grass2.wav","player/footsteps/grass4.wav"} 
 } )
 sound.Add( {
 	name = "MVM.GiantHeavyStep",
@@ -1143,7 +1143,7 @@ sound.Add( {
 	level = 95,
 	pitch = { 92, 103 },
 	channel = CHAN_BODY,
-	sound = {"tf/player/footsteps/grass2.wav","tf/player/footsteps/grass4.wav","tf/player/footsteps/grass1.wav","tf/player/footsteps/grass3.wav"} 
+	sound = {"player/footsteps/grass2.wav","player/footsteps/grass4.wav","player/footsteps/grass1.wav","player/footsteps/grass3.wav"} 
 } )
 sound.Add( {
 	name = "Default.StepLeft",
@@ -1151,7 +1151,7 @@ sound.Add( {
 	level = 95,
 	pitch = { 92, 103 },
 	channel = CHAN_BODY,
-	sound = {"tf/player/footsteps/concrete1.wav","tf/player/footsteps/concrete3.wav","tf/player/footsteps/concrete1.wav","tf/player/footsteps/concrete3.wav"} 
+	sound = {"player/footsteps/concrete1.wav","player/footsteps/concrete3.wav","player/footsteps/concrete1.wav","player/footsteps/concrete3.wav"} 
 } )
 sound.Add( {
 	name = "Concrete.StepRight",
@@ -1159,7 +1159,7 @@ sound.Add( {
 	level = 95,
 	pitch = { 92, 103 },
 	channel = CHAN_BODY,
-	sound = {"tf/player/footsteps/concrete2.wav","tf/player/footsteps/concrete4.wav","tf/player/footsteps/concrete1.wav","tf/player/footsteps/concrete3.wav"} 
+	sound = {"player/footsteps/concrete2.wav","player/footsteps/concrete4.wav","player/footsteps/concrete1.wav","player/footsteps/concrete3.wav"} 
 } ) 
 sound.Add( {
 	name = "Concrete.StepLeft",
@@ -1167,7 +1167,7 @@ sound.Add( {
 	level = 95,
 	pitch = { 92, 103 },
 	channel = CHAN_BODY,
-	sound = {"tf/player/footsteps/concrete1.wav","tf/player/footsteps/concrete3.wav","tf/player/footsteps/concrete1.wav","tf/player/footsteps/concrete3.wav"} 
+	sound = {"player/footsteps/concrete1.wav","player/footsteps/concrete3.wav","player/footsteps/concrete1.wav","player/footsteps/concrete3.wav"} 
 } )
 sound.Add( {
 	name = "Default.StepRight",
@@ -1175,7 +1175,7 @@ sound.Add( {
 	level = 95,
 	pitch = { 92, 103 },
 	channel = CHAN_BODY,
-	sound = {"tf/player/footsteps/concrete2.wav","tf/player/footsteps/concrete4.wav","tf/player/footsteps/concrete1.wav","tf/player/footsteps/concrete3.wav"} 
+	sound = {"player/footsteps/concrete2.wav","player/footsteps/concrete4.wav","player/footsteps/concrete1.wav","player/footsteps/concrete3.wav"} 
 } ) 
 sound.Add( {
 	name = "Wood.StepLeft",
@@ -1183,7 +1183,7 @@ sound.Add( {
 	level = 95,
 	pitch = { 92, 103 },
 	channel = CHAN_BODY,
-	sound = {"tf/player/footsteps/wood1.wav","tf/player/footsteps/wood3.wav","tf/player/footsteps/wood2.wav","tf/player/footsteps/wood4.wav"} 
+	sound = {"player/footsteps/wood1.wav","player/footsteps/wood3.wav","player/footsteps/wood2.wav","player/footsteps/wood4.wav"} 
 } )
 sound.Add( {
 	name = "Wood.StepRight",
@@ -1191,7 +1191,7 @@ sound.Add( {
 	level = 95,
 	pitch = { 92, 103 },
 	channel = CHAN_BODY,
-	sound = {"tf/player/footsteps/wood2.wav","tf/player/footsteps/wood4.wav","tf/player/footsteps/wood1.wav","tf/player/footsteps/wood3.wav"} 
+	sound = {"player/footsteps/wood2.wav","player/footsteps/wood4.wav","player/footsteps/wood1.wav","player/footsteps/wood3.wav"} 
 } )
 sound.Add( {
 	name = "SolidMetal.StepLeft",
@@ -1199,7 +1199,7 @@ sound.Add( {
 	level = 95,
 	pitch = { 92, 103 },
 	channel = CHAN_BODY,
-	sound = {"tf/player/footsteps/metal1.wav","tf/player/footsteps/metal3.wav","tf/player/footsteps/metal2.wav","tf/player/footsteps/metal4.wav",} 
+	sound = {"player/footsteps/metal1.wav","player/footsteps/metal3.wav","player/footsteps/metal2.wav","player/footsteps/metal4.wav",} 
 } )
 sound.Add( {
 	name = "SolidMetal.StepRight",
@@ -1207,7 +1207,7 @@ sound.Add( {
 	level = 95,
 	pitch = { 92, 103 },
 	channel = CHAN_BODY,
-	sound = {"tf/player/footsteps/metal2.wav","tf/player/footsteps/metal4.wav","tf/player/footsteps/metal1.wav","tf/player/footsteps/metal3.wav"} 
+	sound = {"player/footsteps/metal2.wav","player/footsteps/metal4.wav","player/footsteps/metal1.wav","player/footsteps/metal3.wav"} 
 } )
 sound.Add( {
 	name = "Tile.StepLeft",
@@ -1215,7 +1215,7 @@ sound.Add( {
 	level = 95,
 	pitch = { 92, 103 },
 	channel = CHAN_BODY,
-	sound = {"tf/player/footsteps/tile1.wav","tf/player/footsteps/tile2.wav","tf/player/footsteps/tile3.wav","tf/player/footsteps/tile4.wav"} 
+	sound = {"player/footsteps/tile1.wav","player/footsteps/tile2.wav","player/footsteps/tile3.wav","player/footsteps/tile4.wav"} 
 } )
 sound.Add( {
 	name = "Tile.StepRight",
@@ -1223,7 +1223,7 @@ sound.Add( {
 	level = 95,
 	pitch = { 92, 103 },
 	channel = CHAN_BODY,
-	sound = {"tf/player/footsteps/tile1.wav","tf/player/footsteps/tile2.wav","tf/player/footsteps/tile3.wav","tf/player/footsteps/tile4.wav"} 
+	sound = {"player/footsteps/tile1.wav","player/footsteps/tile2.wav","player/footsteps/tile3.wav","player/footsteps/tile4.wav"} 
 } )
 sound.Add( {
 	name = "Grass.StepLeft",
@@ -1231,7 +1231,7 @@ sound.Add( {
 	level = 95,
 	pitch = { 92, 103 },
 	channel = CHAN_BODY,
-	sound = {"tf/player/footsteps/grass1.wav","tf/player/footsteps/grass2.wav","tf/player/footsteps/grass3.wav","tf/player/footsteps/grass4.wav"} 
+	sound = {"player/footsteps/grass1.wav","player/footsteps/grass2.wav","player/footsteps/grass3.wav","player/footsteps/grass4.wav"} 
 } )
 sound.Add( {
 	name = "Grass.StepRight",
@@ -1239,7 +1239,7 @@ sound.Add( {
 	level = 95,
 	pitch = { 92, 103 },
 	channel = CHAN_BODY,
-	sound = {"tf/player/footsteps/grass1.wav","tf/player/footsteps/grass3.wav","tf/player/footsteps/grass3.wav","tf/player/footsteps/grass4.wav"} 
+	sound = {"player/footsteps/grass1.wav","player/footsteps/grass3.wav","player/footsteps/grass3.wav","player/footsteps/grass4.wav"} 
 } )
 sound.Add( {
 	name = "Weapon_FrontierJustice.Single",
@@ -1620,6 +1620,7 @@ GIBS_SPY_START		= 61
 GIBS_ORGANS_START	= 68
 GIBS_SILLY_START	= 69
 GIBS_LAST			= 87
+GIBS_MERCENARY_START	= 89
 
 GIB_UNKNOWN		= -1
 GIB_HAT			= 0
@@ -1887,6 +1888,14 @@ HumanGibs = {
 	"models/player/gibs/gibs_teeth.mdl",
 	"models/player/gibs/gibs_tire.mdl",
 	"models/gibs/hgibs.mdl", -- 88
+	"models/player/gibs/mercenarygib001.mdl", -- 89
+	"models/player/gibs/mercenarygib002.mdl",
+	"models/player/gibs/mercenarygib003.mdl",
+	"models/player/gibs/mercenarygib004.mdl",
+	"models/player/gibs/mercenarygib005.mdl",
+	"models/player/gibs/mercenarygib006.mdl",
+	"models/player/gibs/mercenarygib007.mdl",
+	"models/player/gibs/mercenarygib008.mdl",
 }
 
 NPCModels = {

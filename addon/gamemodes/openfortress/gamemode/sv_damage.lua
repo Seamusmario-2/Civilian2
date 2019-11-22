@@ -578,6 +578,10 @@ function GM:EntityTakeDamage(  ent, dmginfo )
 		if ent:Health() <= 50 or ent == attacker then
 			if ent:HasGodMode() == false then
 				ent:Speak("TLK_PLAYER_ATTACKER_PAIN")
+				
+				if ent:GetPlayerClass() == "mercenary" then
+					ent:EmitSound("vo/mercenary_painsevere0"..math.random(1,6)..".wav", 95)
+				end
 			else
 				if ent:GetPlayerClass() == "scout" then
 					ent:EmitSound("Scout.BeingShotInvincible"..math.random(10,36))
@@ -587,6 +591,9 @@ function GM:EntityTakeDamage(  ent, dmginfo )
 		else
 			if ent:HasGodMode() == false then
 				ent:Speak("TLK_PLAYER_PAIN")
+				if ent:GetPlayerClass() == "mercenary" then
+					ent:EmitSound("vo/mercenary_painsharp0"..math.random(1,8)..".wav", 95)
+				end 
 			else
 				if ent:GetPlayerClass() == "scout" then
 					ent:EmitSound("Scout.BeingShotInvincible"..math.random(10,36))
@@ -604,6 +611,9 @@ function GM:EntityTakeDamage(  ent, dmginfo )
 			ent:Speak("TLK_PLAYER_ATTACKER_PAIN")
 			if ent:GetPlayerClass() == "tank" or ent:GetPlayerClass() == "hunter" or ent:GetPlayerClass() == "charger" or ent:GetPlayerClass() == "jockey" then
 				ent:EmitSound("player/pz/fall/bodyfall_largecreature.wav", 85)
+			end
+			if ent:GetPlayerClass() == "mercenary" then
+				ent:EmitSound("vo/mercenary_painsevere0"..math.random(1,6)..".wav")
 			end
 		else
 			if ent:GetPlayerClass() == "scout" then

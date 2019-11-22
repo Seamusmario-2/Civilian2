@@ -297,6 +297,7 @@ hook.Add("PreScaleDamage", "BackstabSetDamage", function(ent, hitgroup, dmginfo)
 	elseif ent:IsNPC() and ent:GetClass() == "npc_antlionguard" then
 		ent:EmitSound("npc/antlion/shell_impact"..math.random(1,4)..".wav", 80, 100)
 	end
+
 	if inf.ShouldBackstab and inf:ShouldBackstab(ent) and inf:GetClass() != "tf_weapon_knife_icicle" then
 		inf.ResetBaseDamage = inf.BaseDamage
 		if ent:IsPlayer() and ent:GetInfoNum("tf_hhh", 0) == 1 then

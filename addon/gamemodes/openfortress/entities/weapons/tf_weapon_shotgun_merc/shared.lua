@@ -18,7 +18,7 @@ end
 SWEP.Base				= "tf_weapon_gun_base"
 
 SWEP.ViewModel			= "models/weapons/v_models/v_shotgun_merc.mdl"
-SWEP.WorldModel			= "models/weapons/w_models/w_shotgun.mdl"
+SWEP.WorldModel			= "models/weapons/c_models/c_shotgun/c_shotgun.mdl"
 SWEP.Crosshair = "tf_crosshair1"
 
 SWEP.MuzzleEffect = "muzzle_shotgun"

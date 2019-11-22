@@ -42,14 +42,14 @@ SWEP.MaxDamageFalloff = 0.3
 SWEP.BulletsPerShot = 10
 SWEP.BulletSpread = 0.0675
 
-SWEP.Primary.ClipSize		= 2
+SWEP.Primary.ClipSize		= 1
 SWEP.Primary.DefaultClip	= SWEP.Primary.ClipSize
 SWEP.Primary.Ammo			= TF_PRIMARY
 SWEP.Primary.Delay          = 0.35
 
 SWEP.ReloadSingle = true
 SWEP.ReloadTime = 2
-SWEP.HoldType = "SECONDARY"
+SWEP.HoldType = "SUPER_SHOTGUN"
 
 SWEP.HoldTypeHL2 = "shotgun"
 
@@ -120,12 +120,18 @@ end)
 
 end
 
+function SWEP:Reload()
+	if not self:CallBaseFunction("Reload") then return end
+	
+	self.Owner:DoAnimationEvent(ACT_MERC_RELOAD_STAND_SUPERSHOTGUN)
+	
+end
+
 function SWEP:PrimaryAttack()
 	if not self:CallBaseFunction("PrimaryAttack") then return end
-	
 	if SERVER and self.ScattergunHasKnockback then
 		self:DoOwnerKnockback()
 	end
-	
+	self.Owner:DoAnimationEvent(ACT_MERC_ATTACK_STAND_SUPERSHOTGUN)
 	return
 end

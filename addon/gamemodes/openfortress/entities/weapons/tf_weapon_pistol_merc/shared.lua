@@ -41,9 +41,11 @@ SWEP.Primary.DefaultClip	= SWEP.Primary.ClipSize
 SWEP.Primary.Ammo			= TF_SECONDARY
 SWEP.Primary.Delay          = 0.15
 
-SWEP.HoldType = "SECONDARY2"
+SWEP.HoldType = "PISTOL_MERCENARY"
 
 SWEP.HoldTypeHL2 = "pistol"
+
+SWEP.ReloadTime = 1.8
 
 SWEP.IsRapidFire = true
 

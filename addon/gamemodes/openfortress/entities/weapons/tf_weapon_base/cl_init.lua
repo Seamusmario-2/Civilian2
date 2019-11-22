@@ -76,6 +76,66 @@ function SWEP:InitializeCModel()
 		end
 	end
 end
+function SWEP:InitializeCModelArms()
+	if self.Owner:GetPlayerClass() == "mercenary" then
+		--Msg("InitializeCModel\n")
+		local vm = self.Owner:GetViewModel()
+		
+		local wmodel = self.WorldModelOverride or self.WorldModel
+		
+		if IsValid(self.CModelArms) then
+			self.CModelArms:SetModel("models/weapons/c_models/c_merc_arms.mdl")
+		elseif IsValid	(vm) then
+			self.CModelArms = ents.CreateClientProp()
+			if not IsValid(self.CModelArms) then return end
+			
+			self.CModelArms:SetPos(vm:GetPos())
+			self.CModelArms:SetModel("models/weapons/c_models/c_merc_arms.mdl")
+			self.CModelArms:SetAngles(vm:GetAngles())
+			self.CModelArms:AddEffects(EF_BONEMERGE)
+			self.CModelArms:SetParent(vm)
+			self.CModelArms:SetNoDraw(true)
+		end
+		
+		if IsValid(self.CModelArms) then
+			self.CModelArms.Player = self.Owner
+			self.CModelArms.Weapon = self
+			
+			if self.MaterialOverride then
+				self.CModelArms:SetMaterial(self.MaterialOverride)
+			end
+		end
+	elseif self.Owner:GetPlayerClass() != "demoman" then
+		--Msg("InitializeCModel\n")
+		local vm = self.Owner:GetViewModel()
+		
+		local wmodel = self.WorldModelOverride or self.WorldModel
+		
+		if IsValid(self.CModelArms) then
+			self.CModelArms:SetModel("models/weapons/c_models/c_"..self.Owner:GetPlayerClass().."_arms.mdl")
+		elseif IsValid	(vm) then
+			self.CModelArms = ents.CreateClientProp()
+			if not IsValid(self.CModelArms) then return end
+			
+			self.CModelArms:SetPos(vm:GetPos())
+			self.CModelArms:SetModel("models/weapons/c_models/c_"..self.Owner:GetPlayerClass().."_arms.mdl")
+			self.CModelArms:SetAngles(vm:GetAngles())
+			self.CModelArms:AddEffects(EF_BONEMERGE)
+			self.CModelArms:SetParent(vm)
+			self.CModelArms:SetNoDraw(true)
+		end
+		
+		if IsValid(self.CModelArms) then
+			self.CModelArms.Player = self.Owner
+			self.CModelArms.Weapon = self
+			
+			if self.MaterialOverride then
+				self.CModelArms:SetMaterial(self.MaterialOverride)
+			end
+		end
+	end
+end
+
 
 -- Attached viewmodels seem to lose their parent when the player exits a vehicle, we'll force ViewModelDrawn to re-parent them to the player's viewmodel if the player has entered a vehicle
 local LastVehicle = NULL
@@ -146,7 +206,10 @@ function SWEP:RenderCModel()
 	if IsValid(self.CModel) then
 		self.CModel:DrawModel()
 	end
-	
+
+	if IsValid(self.CModelArms) then
+		self.CModelArms:DrawModel()
+	end
 	if IsValid(self.AttachedVModel) then
 		self.AttachedVModel:DrawModel()
 	end

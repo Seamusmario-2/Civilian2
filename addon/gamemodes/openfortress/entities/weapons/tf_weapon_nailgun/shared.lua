@@ -7,20 +7,20 @@ if CLIENT then
 
 SWEP.PrintName			= "Nailgun"
 SWEP.Slot				= 0
-
+SWEP.RenderGroup		= RENDERGROUP_BOTH
 end
 
 SWEP.Base				= "tf_weapon_gun_base"
 
-SWEP.ViewModel			= "models/advancedweaponiser/nailgun/v_nailgun.mdl"
-SWEP.WorldModel			= "models/advancedweaponiser/nailgun/c_nailgun.mdl"
+SWEP.ViewModel			= "models/weapons/v_models/v_nailgun_mercenary.mdl"
+SWEP.WorldModel			= "models/weapons/w_models/w_nailgun.mdl"
 SWEP.Crosshair = 		"tf_crosshair1"
 
 SWEP.MuzzleEffect = "muzzle_pistol"
 
 SWEP.ShootSound = Sound("weapons/nail_gun_shoot.wav")
 SWEP.ShootCritSound = Sound("weapons/nail_gun_shoot_crit.wav")
-SWEP.ReloadSound = Sound("weapons/syringegun_worldreload.wav")
+SWEP.ReloadSound = Sound("weapons/smg_worldreload.wav")
 
 SWEP.Primary.ClipSize		= 40
 SWEP.Primary.DefaultClip	= SWEP.Primary.ClipSize
@@ -34,7 +34,7 @@ SWEP.ReloadSingle = false
 
 SWEP.ReloadTime = 1.5	
 
-SWEP.HoldType = "SECONDARY2"
+SWEP.HoldType = "SECONDARY"
 
 SWEP.ProjectileShootOffset = Vector(0, 8, -5)
 

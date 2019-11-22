@@ -44,24 +44,24 @@ local ATTRIBUTES = {
 	
 ["mult_maxammo_primary"] = {
 	equip = function(v,weapon,owner)
-		if SERVER and owner.AmmoMax and owner.AmmoMax[tf_PRIMARY] then
-			owner.AmmoMax[tf_PRIMARY] = math.Round(owner.AmmoMax[tf_PRIMARY] * v)
+		if SERVER and owner.AmmoMax and owner.AmmoMax[TF_PRIMARY] then
+			owner.AmmoMax[TF_PRIMARY] = math.Round(owner.AmmoMax[TF_PRIMARY] * v)
 		end
 	end,
 },
 
 ["mult_maxammo_secondary"] = {
 	equip = function(v,weapon,owner)
-		if SERVER and owner.AmmoMax and owner.AmmoMax[tf_SECONDARY] then
-			owner.AmmoMax[tf_SECONDARY] = math.Round(owner.AmmoMax[tf_SECONDARY] * v)
+		if SERVER and owner.AmmoMax and owner.AmmoMax[TF_SECONDARY] then
+			owner.AmmoMax[TF_SECONDARY] = math.Round(owner.AmmoMax[TF_SECONDARY] * v)
 		end
 	end,
 },
 
 ["mult_maxammo_metal"] = {
 	equip = function(v,weapon,owner)
-		if SERVER and owner.AmmoMax and owner.AmmoMax[tf_METAL] then
-			owner.AmmoMax[tf_METAL] = math.Round(owner.AmmoMax[tf_METAL] * v)
+		if SERVER and owner.AmmoMax and owner.AmmoMax[TF_METAL] then
+			owner.AmmoMax[TF_METAL] = math.Round(owner.AmmoMax[TF_METAL] * v)
 		end
 	end,
 },
@@ -366,7 +366,7 @@ local ATTRIBUTES = {
 
 ["add_metal_regen"] = {
 	_global_ammo_regen = function(v,ent,data)
-		data[tf_METAL] = (data[tf_METAL] or 0) + v
+		data[TF_METAL] = (data[TF_METAL] or 0) + v
 	end,
 },
 

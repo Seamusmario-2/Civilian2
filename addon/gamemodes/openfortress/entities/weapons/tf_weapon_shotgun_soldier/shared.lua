@@ -8,6 +8,13 @@ sound.Add( {
 	level = 95,
 	sound = { "weapons/shotgun/shotgun_reload1.wav", "weapons/shotgun/shotgun_reload2.wav", "weapons/shotgun/shotgun_reload3.wav"	}
 } )
+sound.Add( {
+	name = "Weapon_Shotgun.WorldReload",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	level = 95,
+	sound = { "weapons/shotgun/shotgun_reload1.wav", "weapons/shotgun/shotgun_reload2.wav", "weapons/shotgun/shotgun_reload3.wav"	}
+} )
 
 if CLIENT then
 	SWEP.PrintName			= "Shotgun"

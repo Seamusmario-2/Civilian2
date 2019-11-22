@@ -363,6 +363,9 @@ function SWEP:Deploy()
 		end
 	end	
 	self:InitializeWModel2()
+	if CLIENT then
+		self:InitializeCModelArms()
+	end
 	self:InitializeAttachedModels()
 	if SERVER then
 		if IsValid(self.WModel2) then
@@ -700,6 +703,8 @@ function SWEP:PrimaryAttack(noscene)
 	
 	self.NextDeployed = nil
 	
+	self.CritsOnHeadshot = true
+	
 	local Delay = self.Delay or -1
 	local QuickDelay = self.QuickDelay or -1
 	
@@ -861,17 +866,6 @@ end
 function SWEP:Think()
 	self:TFViewModelFOV()
 	self:TFFlipViewmodel()
-	if self:GetClass() != "tf_weapon_robo_arm" and self:GetClass() != "tf_weapon_trenchknife" and self:GetClass() != "tf_weapon_capsulelauncher" and self:GetClass() != "tf_weapon_tranqulizer" and self:GetClass() != "tf_weapon_pistol_m9"  and self:GetClass() != "tf_weapon_wrench_vagineer" then
-		if self.Owner:GetNWBool("NoWeapon") == true then 
-			if SERVER then
-				self.WModel2:SetNoDraw(true)
-			end
-		else
-			if SERVER then
-				self.WModel2:SetNoDraw(false)
-			end
-		end
-	end
 	//deployspeed = math.Round(GetConVar("tf_weapon_deploy_speed"):GetFloat() - GetConVar("tf_weapon_deploy_speed"):GetInt(), 2)
 	//deployspeed = math.Round(GetConVar("tf_weapon_deploy_speed"):GetFloat(),2)
 	if SERVER and self.NextReplayDeployAnim then

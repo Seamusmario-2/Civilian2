@@ -174,7 +174,7 @@ function meta:SetBuilding(group, mode)
 	local builder = self:GetWeapon("tf_weapon_builder")
 	if self.Buildings[group] and self.Buildings[group][mode] then
 		local cost = self.Buildings[group][mode].cost
-		if self:GetAmmoCount(tf_METAL) < cost then
+		if self:GetAmmoCount(TF_METAL) < cost then
 			return false
 		end
 		
@@ -318,7 +318,7 @@ function meta:GiveTFAmmo(c, am, is_fraction)
 		c = math.min(self.AmmoMax[am] - a, c)
 		if c>0 then
 			self:GiveAmmo(c, am)
-			if am == tf_METAL then
+			if am == TF_METAL then
 				umsg.Start("PlayerMetalBonus", self)
 					umsg.Short(c)
 				umsg.End()
@@ -327,7 +327,7 @@ function meta:GiveTFAmmo(c, am, is_fraction)
 		end
 	else
 		self:RemoveAmmo(-c, am)
-		if am == tf_METAL then
+		if am == TF_METAL then
 			umsg.Start("PlayerMetalBonus", self)
 				umsg.Short(-c)
 			umsg.End()

@@ -80,10 +80,12 @@ function SWEP:PredictCriticalHit()
 			mask = MASK_SHOT,
 		}
 		
+		
 		if tr.Hit and tr.HitGroup == HITGROUP_HEAD then
 			--self.Owner.NextShotIsCritical = true
 			--self.Owner:SetNWBool("NextShotIsCritical", true)
 			self.NameOverride = self.HeadshotName
+			tr.Entity:AddDeathFlag(DF_HEADSHOT)
 			return true
 		else
 			--self.Owner.NextShotIsCritical = false

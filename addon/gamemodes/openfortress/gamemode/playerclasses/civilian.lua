@@ -13,9 +13,9 @@ if CLIENT then
 	}
 end
 
-CLASS.Loadout = {""}
+CLASS.Loadout = {"tf_weapon_crowbar"}
 CLASS.DefaultLoadout = {""}
-CLASS.ModelName = "scout"
+CLASS.ModelName = "civilian"
 
 CLASS.Gibs = {
 	[GIB_LEFTLEG]		= GIBS_SCOUT_START,

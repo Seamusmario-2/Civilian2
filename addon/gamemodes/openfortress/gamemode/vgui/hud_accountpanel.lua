@@ -55,7 +55,7 @@ function PANEL:Paint()
 		return
 	end
 	
-	local n = LocalPlayer():GetAmmoCount(tf_METAL)
+	local n = LocalPlayer():GetAmmoCount(TF_METAL)
 	local t = LocalPlayer():Team()
 	
 	local tex = misc_ammo_area[t] or misc_ammo_area[1]

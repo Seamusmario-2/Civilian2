@@ -10,12 +10,12 @@ end
 
 SWEP.Base				= "tf_weapon_melee_base"
 
-SWEP.ViewModel			= "models/weapons/v_models/v_crowbar_merc.mdl"
-SWEP.WorldModel			= "models/weapons/c_models/c_pickaxe/c_crowbar.mdl" 
+SWEP.ViewModel			= "models/weapons/v_models/v_crowbar_mercenary.mdl"
+SWEP.WorldModel			= "models/weapons/v_models/v_crowbar_mercenary.mdl" 
 SWEP.Crosshair = "tf_crosshair3"
 
-SWEP.Swing = Sound("weapons/hl1/cbar_miss1.wav")
-SWEP.SwingCrit = Sound("weapons/hl1/cbar_miss1_crit.wav")
+SWEP.Swing = Sound("Weapon_Crowbar.Single")
+SWEP.SwingCrit = Sound("Weapon_Crowbar.Single")
 SWEP.HitFlesh = Sound("Weapon_Crowbar.HitFlesh")
 SWEP.HitWorld = Sound("Weapon_Crowbar.HitWorld")
 

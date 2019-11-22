@@ -444,6 +444,8 @@ function GM:DoPlayerDeath(ply, attacker, dmginfo)
 	end
 	if ply:HasDeathFlag(DF_HEADSHOT) and not ply:IsHL2() then
 		ply:RandomSentence("CritDeath")
+		ply:EmitSound("TFPlayer.Decapitated")
+		ply:Decap()
 		local animent = ents.Create( 'base_gmodentity' ) -- The entity used for the death animation	
 		animent:SetModel(ply:GetModel())
 		animent:SetSkin(ply:GetSkin())
@@ -451,66 +453,27 @@ function GM:DoPlayerDeath(ply, attacker, dmginfo)
 		animent:SetAngles(ply:GetAngles())
 		animent:Spawn()
 		animent:Activate()
-	
+
 		local b1 = animent:LookupBone("bip_head")
 		local b2 = animent:LookupBone("bip_neck")
-		local b3 = animent:LookupBone("jaw_bone")
+		local b3 = animent:LookupBone("prp_helmet")
+		local b4 = animent:LookupBone("jaw_bone")
+	
+		local m1 = animent:GetBoneMatrix(b1)
+		local m2 = animent:GetBoneMatrix(b2)
 		animent:SetSolid( SOLID_OBB ) -- This stuff isn't really needed, but just for physics
 		animent:PhysicsInit( SOLID_OBB )
 		animent:SetCollisionGroup( COLLISION_GROUP_DEBRIS )
 		animent:SetSequence( "primary_death_headshot" )
 		animent:SetPlaybackRate( 1 )
 		animent.AutomaticFrameAdvance = true
-
-		if ply:GetInfoNum("tf_robot", 0) == 1 then
-		
-			ply:EmitSound("MVM_Weapon_BaseballBat.HitFlesh")
-			if ply:GetPlayerClass() == "heavy" then
-				local animent2 = ents.Create( 'base_gmodentity' ) -- The entity used for the death animation	
-				animent2:SetModel(ply:GetActiveWeapon():GetModel()) 
-				animent2:SetAngles(ply:GetAngles())
-				animent2:SetPos(animent:GetPos())
-				animent2:Spawn()
-				animent2:Activate()
-				animent2:SetParent(animent)
-				animent2:AddEffects(EF_BONEMERGE)
-				animent:ManipulateBoneScale(b1, Vector(0,0,0))
-				animent:ManipulateBoneScale(b2, Vector(0,0,0))
-				animent:ManipulateBoneScale(b3, Vector(0,0,0))
-				local rag2 = ents.Create( 'prop_physics' )
-				rag2:SetPos(animent:GetPos())
-				rag2:SetAngles(animent:GetAngles())
-				rag2:SetModel("models/bots/gibs/heavybot_gib_head.mdl")
-				rag2:Spawn()
-				rag2:Activate()
-				rag2:SetCollisionGroup( COLLISION_GROUP_DEBRIS ) 
-			end
-			
+		animent:ManipulateBoneScale(b1, Vector(0,0,0))
+		animent:ManipulateBoneScale(b2, Vector(0,0,0))	
+		if animent:GetModel() == "models/player/engineer.mdl" then
+			animent:ManipulateBoneScale(b3, Vector(0,0,0))
 		end
-		if ply:IsBot() and GetConVar("tf_botbecomerobots"):GetInt() == 1 and ply:Team() == TEAM_BLU then
-		
-			ply:EmitSound("MVM_Weapon_BaseballBat.HitFlesh")
-			if ply:GetPlayerClass() == "heavy" then
-				local animent2 = ents.Create( 'base_gmodentity' ) -- The entity used for the death animation	
-				animent2:SetModel(ply:GetActiveWeapon():GetModel()) 
-				animent2:SetAngles(ply:GetAngles())
-				animent2:SetPos(animent:GetPos())
-				animent2:Spawn()
-				animent2:Activate()
-				animent2:SetParent(animent)
-				animent2:AddEffects(EF_BONEMERGE)
-				animent:ManipulateBoneScale(b1, Vector(0,0,0))
-				animent:ManipulateBoneScale(b2, Vector(0,0,0))
-				animent:ManipulateBoneScale(b3, Vector(0,0,0))
-				local rag2 = ents.Create( 'prop_physics' )
-				rag2:SetPos(animent:GetPos())
-				rag2:SetAngles(animent:GetAngles())
-				rag2:SetModel("models/bots/gibs/heavybot_gib_head.mdl")
-				rag2:Spawn()
-				rag2:Activate()
-				rag2:SetCollisionGroup( COLLISION_GROUP_DEBRIS )
-			end
-			
+		if ply:GetRagdollEntity():IsValid() then
+			ply:GetRagdollEntity():Remove()
 		end
 		function animent:Think() -- This makes the animation work
 			if ply:GetRagdollEntity():IsValid() then
@@ -528,9 +491,6 @@ function GM:DoPlayerDeath(ply, attacker, dmginfo)
 			rag:Activate()
 			rag:SetCollisionGroup( COLLISION_GROUP_DEBRIS )
 			TransferBones( animent, rag )
-			if IsValid(rag2) then
-				rag2:Remove()
-			end
 			animent:Remove()
 		end )
 	end		
@@ -825,18 +785,27 @@ function GM:DoPlayerDeath(ply, attacker, dmginfo)
 			if ply:GetMaterial() == "models/shadertest/predator" then return end
 			if not ply:IsHL2() and ply:Team() == TEAM_BLU and string.find(game.GetMap(), "mvm_") then return end
 			ply:RandomSentence("CritDeath")
+			if ply:GetPlayerClass() == "mercenary" then
+				ply:EmitSound("vo/mercenary_paincrticialdeath0"..math.random(1,4)..".wav", 95)
+			end
 		end
 	elseif dmginfo:IsDamageType(DMG_CLUB) or dmginfo:IsDamageType(DMG_SLASH) or inflictor.HoldType=="MELEE" then -- Melee damage
 		if not inflictor.IsSilentKiller then	
 			if ply:GetMaterial() == "models/shadertest/predator" then return end
 			if not ply:IsHL2() and ply:Team() == TEAM_BLU and string.find(game.GetMap(), "mvm_") then return end
 			ply:RandomSentence("MeleeDeath")
+			if ply:GetPlayerClass() == "mercenary" then
+				ply:EmitSound("vo/mercenary_paincrticialdeath0"..math.random(1,4)..".wav", 95)
+			end
 		end
 	else -- Bullet/fire damage
 		if not inflictor.IsSilentKiller then
 			if ply:GetMaterial() == "models/shadertest/predator" then return end
 			if not ply:IsHL2() and ply:Team() == TEAM_BLU and string.find(game.GetMap(), "mvm_") then return end
 			ply:RandomSentence("Death")
+			if ply:GetPlayerClass() == "mercenary" then
+				ply:EmitSound("vo/mercenary_painsevere0"..math.random(1,6)..".wav", 95)
+			end
 		end
 	end
 

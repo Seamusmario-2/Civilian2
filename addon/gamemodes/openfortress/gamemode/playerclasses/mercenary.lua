@@ -13,18 +13,17 @@ if CLIENT then
 	}
 end 
 
-CLASS.Loadout = {}
-CLASS.ModelName = "soldier"
+CLASS.Loadout = {"tf_weapon_pistol_merc","tf_weapon_crowbar"}
+CLASS.ModelName = "mercenary"
 
 CLASS.Gibs = {
-	[GIB_LEFTLEG]		= GIBS_SOLDIER_START,
-	[GIB_RIGHTLEG]		= GIBS_SOLDIER_START+1,
-	[GIB_RIGHTARM]		= GIBS_SOLDIER_START+2,
-	[GIB_TORSO]			= GIBS_SOLDIER_START+5,
-	[GIB_EQUIPMENT1]	= GIBS_SOLDIER_START+3,
-	[GIB_EQUIPMENT2]	= GIBS_SOLDIER_START+4,
-	[GIB_HEAD]			= GIBS_SOLDIER_START+6,
-	[GIB_HEADGEAR1]		= GIBS_SOLDIER_START+7,
+	[GIB_LEFTLEG]		= GIBS_MERCENARY_START,
+	[GIB_RIGHTLEG]		= GIBS_MERCENARY_START+1,
+	[GIB_RIGHTARM]		= GIBS_MERCENARY_START+2,
+	[GIB_TORSO]			= GIBS_MERCENARY_START+6,
+	[GIB_EQUIPMENT1]	= GIBS_MERCENARY_START+3,
+	[GIB_EQUIPMENT2]	= GIBS_MERCENARY_START+4,
+	[GIB_HEAD]			= GIBS_MERCENARY_START+7,
 	[GIB_ORGAN]			= GIBS_ORGANS_START,
 }
 
@@ -67,11 +66,8 @@ if SERVER then
 
 function CLASS:Initialize()
 	self:SetModel("models/player/mercenary.mdl")
-	if self:IsBot() then
-		self:SelectWeapon("tf_weapon_pistol_merc")
-	else
-		self:SelectWeapon("tf_weapon_crowbar")
-	end
+	self:Give("tf_weapon_pistol_merc")
+	self:Give("tf_weapon_crowbar")
 end
 
 end
