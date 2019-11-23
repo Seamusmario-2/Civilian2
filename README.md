@@ -7,7 +7,7 @@ This is work in progress. Expect bugs and exploits!
 
 ## Installation
 Drop the addon folder into the addons folder.
-Mount open fortress using this method:
+Mount Open Fortress using this method:
 ###
   - Go to your Garrys Mod's Config Directory. eg: C:\Program Files (x86)\Steam\steamapps\common\GarrysMod\garrysmod\cfg
   - Modify mounts.cfg, put this in the config after the quote "tf"
