@@ -481,15 +481,6 @@ function SWEP:Deploy()
 	
 	--self.IsDeployed = false
 	self:RollCritical()
-	timer.Simple(0.2, function()
-		if IsValid(self) then
-			if IsValid(self.Owner) then
-				if IsValid(self.Owner:GetViewModel()) then  
-					self.Owner:GetViewModel():SetPlaybackRate(1.2)
-				end
-			end
-		end
-	end)
 	if self.Owner.ForgetLastWeapon then
 		self.Owner.ForgetLastWeapon = nil
 		return false

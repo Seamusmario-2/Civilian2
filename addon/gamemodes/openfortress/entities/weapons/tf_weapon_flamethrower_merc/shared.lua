@@ -16,7 +16,7 @@ end
 
 if CLIENT then
 
-SWEP.PrintName			= "Flamethrower"
+SWEP.PrintName			= "Lightning Gun"
 SWEP.Slot				= 4
 SWEP.RenderGroup		= RENDERGROUP_BOTH
 
@@ -28,12 +28,12 @@ function SWEP:SetFlamethrowerEffect(i)
 	local t = GAMEMODE:EntityTeam(self.Owner)
 	
 	if i==1 then
-		effect = "flamethrower_new"
+		effect = "LG_bolt"
 	elseif i>1 then
 		if t==2 then
-			effect = "flamethrower_crit_blue"
-		else
-			effect = "flamethrower_crit_red"
+			effect = "LG_bolt_crit"
+		else 
+			effect = "LG_bolt_crit"
 		end
 	end
 	
@@ -72,8 +72,8 @@ end)
 end
 
 PrecacheParticleSystem("flamethrower_fire_1")
-PrecacheParticleSystem("flamethrower_crit_red")
-PrecacheParticleSystem("flamethrower_new")
+PrecacheParticleSystem("LG_bolt_crit")
+PrecacheParticleSystem("LG_bolt")
 PrecacheParticleSystem("flamethrower_crit_blue")
 PrecacheParticleSystem("pyro_blast")
 PrecacheParticleSystem("pyro_blast_flash")
@@ -83,8 +83,8 @@ PrecacheParticleSystem("pyro_blast_warp2")
 
 SWEP.Base				= "tf_weapon_gun_base"
 
-SWEP.ViewModel			= "models/weapons/v_models/v_flamethrower_pyro.mdl"
-SWEP.WorldModel			= "models/weapons/c_models/c_flamethrower/c_flamethrower.mdl"
+SWEP.ViewModel			= "models/weapons/v_models/v_lightning_gun.mdl"
+SWEP.WorldModel			= "models/weapons/w_models/w_lightning_gun.mdl"
 SWEP.Crosshair = "tf_crosshair3"
 
 SWEP.MuzzleEffect = "pyro_blast"
@@ -92,18 +92,19 @@ SWEP.Spawnable = true
 SWEP.AdminSpawnable = false
 SWEP.Category = "Team Fortress 2"
 
-SWEP.ShootSound = Sound("Weapon_FlameThrower.FireStart")
-SWEP.SpecialSound1 = Sound("Weapon_FlameThrower.FireLoop")
-SWEP.ShootCritSound = Sound("Weapon_FlameThrower.FireLoopCrit")
-SWEP.ShootSoundEnd = Sound("Weapon_FlameThrower.FireEnd")
-SWEP.FireHit = Sound("Weapon_FlameThrower.FireHit")
-SWEP.PilotLoop = Sound("Weapon_FlameThrower.PilotLoop")
+SWEP.ShootSound = Sound(")weapons/lightning_gun_start.wav")
+SWEP.SpecialSound1 = Sound(")weapons/lightning_gun_loop.wav")
+SWEP.ShootCritSound = Sound(")weapons/lightning_gun_loop_crit.wav")
+SWEP.ShootSoundEnd = Sound(")weapons/lightning_gun_end.wav")
+SWEP.FireHit = Sound(")weapons/lightning_gun_hit.wav")
+SWEP.PilotLoop = Sound(")weapons/lightning_gun_loop_hum.wav")
 
 SWEP.AirblastSound = Sound("Weapon_FlameThrower.AirBurstAttack")
 SWEP.AirblastDeflectSound = Sound("Weapon_FlameThrower.AirBurstAttackDeflect")
 
 SWEP.Primary.ClipSize		= -1
-SWEP.Primary.Ammo			= TF_PRIMARY
+SWEP.Primary.DefaultClip		= -1
+SWEP.Primary.Ammo			= TF_SECONDARY
 SWEP.Primary.Delay          = 0.04
 
 SWEP.Secondary.Automatic	= true
@@ -115,7 +116,7 @@ SWEP.BulletSpread = 0.06
 SWEP.IsRapidFire = true
 SWEP.ReloadSingle = false
 
-SWEP.HoldType = "ITEM2"
+SWEP.HoldType = "SECONDARY"
 SWEP.HoldTypeHL2 = "crossbow"
 
 SWEP.ProjectileShootOffset = Vector(3, 8, -5)
@@ -134,7 +135,7 @@ end
 
 function SWEP:PrimaryAttack()
 	if not self.IsDeployed then return false end
-	
+	if not self:CanPrimaryAttack() then return false end
 	if self.Owner:GetMaterial() == "models/shadertest/predator" then return false end
 	if self:Ammo1()<=0 then
 		return
@@ -256,9 +257,6 @@ function SWEP:ShootProjectile()
 		
 		flame:SetVelocity(self.Owner:GetVelocity())
 	end
-end
-
-function SWEP:Reload()
 end
 
 function SWEP:StopFiring()

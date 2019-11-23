@@ -97,7 +97,7 @@ function SWEP:Reload()
 				end
 			else
 				self:SendWeaponAnimEx(self.VM_RELOAD)
-				self.Owner:DoAnimationEvent(ACT_DOD_PRIMARYATTACK_PRONE_DEPLOYED)
+				self.Owner:DoAnimationEvent(ACT_MERC_RELOAD_STAND_SMG_MERCENARY)
 				self.NextIdle = CurTime() + (self.ReloadTime or self:SequenceDuration())
 				self.NextReload = self.NextIdle
 				
@@ -119,4 +119,10 @@ function SWEP:Reload()
 			return true
 		end
 	end
+end
+
+function SWEP:PrimaryAttack()
+	if not self:CallBaseFunction("PrimaryAttack") then return end
+	
+	self.Owner:DoAnimationEvent(ACT_MERC_ATTACK_STAND_SMG_MERCENARY)
 end
