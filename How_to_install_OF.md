@@ -36,3 +36,5 @@ Simpily right click inside the folder and click Update.
 
 
 This installation is unofficial. If you have any problems please contact Open Fortress support from here: https://discord.gg/Jk3NUb7
+
+Images are taken from the official installation channel in Open Fortress's Discord.
