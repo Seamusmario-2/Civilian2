@@ -9,6 +9,7 @@ However, Version 1.13 will not work with this method.
 ![Image 1](https://cdn.discordapp.com/attachments/620656688382345256/620656839746650124/unknown.png)
 
 The installer will take a while to start so if you don't see the `next` you just have to wait a bit.
+
 The best setup for most users should look like this.
 ![Image 2](https://cdn.discordapp.com/attachments/620656688382345256/620656940829114385/unknown.png)
 
