@@ -1,6 +1,8 @@
 ## Open Fortress Gamemode
 The Gamemode that allows you to play an TF2 Source SDK Mod in Gmod!
 
+If you don't have Open Fortress, please listen to these instructions in there: https://github.com/Seamusmario-2/Open-Fortress-Gamemode/blob/dev/How_to_install_OF.md
+
 # Notice
 
 This is work in progress. Expect bugs and exploits!
