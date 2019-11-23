@@ -129,7 +129,6 @@ end
 
 function SWEP:PrimaryAttack()
 	if not self:CallBaseFunction("PrimaryAttack") then return end
-2	end
 	self.Owner:DoAnimationEvent(ACT_MERC_ATTACK_STAND_SUPERSHOTGUN)
 	return
 end

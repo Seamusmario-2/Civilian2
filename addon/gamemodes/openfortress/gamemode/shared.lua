@@ -867,7 +867,7 @@ sound.Add( {
 	volume = 1.0,
 	level = 95,
 	pitch = { 100 },
-	sound = { "tf/weapons/explode1.wav",  "tf/weapons/explode2.wav",  "tf/weapons/explode3.wav"} 
+	sound = { "weapons/explode1.wav",  "weapons/explode2.wav" } 
 } )
 sound.Add( {
 	name = "NPC_AntlionGuard.StepLight",
@@ -1917,13 +1917,13 @@ HumanGibs = {
 	"models/player/gibs/gibs_tire.mdl",
 	"models/gibs/hgibs.mdl", -- 88
 	"models/player/gibs/mercenarygib001.mdl", -- 89
-	"models/player/gibs/mercenarygib002.mdl",
-	"models/player/gibs/mercenarygib003.mdl",
-	"models/player/gibs/mercenarygib004.mdl",
-	"models/player/gibs/mercenarygib005.mdl",
-	"models/player/gibs/mercenarygib006.mdl",
-	"models/player/gibs/mercenarygib007.mdl",
-	"models/player/gibs/mercenarygib008.mdl",
+	"models/player/gibs/mercenarygib002.mdl", -- 89 + 1
+	"models/player/gibs/mercenarygib003.mdl", -- 89 + 2
+	"models/player/gibs/mercenarygib004.mdl", -- 89 + 3
+	"models/player/gibs/mercenarygib005.mdl", -- 89 + 4
+	"models/player/gibs/mercenarygib006.mdl", -- 89 + 5
+	"models/player/gibs/mercenarygib007.mdl", -- 89 + 6
+	"models/player/gibs/mercenarygib008.mdl", -- 89 + 7
 }
 
 NPCModels = {

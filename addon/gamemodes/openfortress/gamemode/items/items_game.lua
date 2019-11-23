@@ -51,11 +51,11 @@
 	{
 		"0"
 		{
-			"name"	"tf_WEAPON_BAT"
-			"item_class"	"tf_weapon_bat"
+			"name"	"TF_WEAPON_BAT"
+			"item_class"	"TF_weapon_bat"
 			"craft_class"	"weapon"
-			"item_type_name"	"#tf_Weapon_Bat"
-			"item_name"	"#tf_Weapon_Bat"
+			"item_type_name"	"#TF_Weapon_Bat"
+			"item_name"	"#TF_Weapon_Bat"
 			"item_slot"	"melee"
 			"item_quality"	"normal"
 			"baseitem" "1"
@@ -75,11 +75,11 @@
 		}
 		"1"
 		{
-			"name"	"tf_WEAPON_BOTTLE"
-			"item_class"	"tf_weapon_bottle"
+			"name"	"TF_WEAPON_BOTTLE"
+			"item_class"	"TF_weapon_bottle"
 			"craft_class"	"weapon"
-			"item_type_name"	"#tf_Weapon_Bottle"
-			"item_name"	"#tf_Weapon_Bottle"
+			"item_type_name"	"#TF_Weapon_Bottle"
+			"item_name"	"#TF_Weapon_Bottle"
 			"item_slot"	"melee"
 			"item_quality"	"normal"
 			"baseitem" "1"
@@ -99,11 +99,11 @@
 		}
 		"2"
 		{
-			"name"	"tf_WEAPON_FIREAXE"
-			"item_class"	"tf_weapon_fireaxe"
+			"name"	"TF_WEAPON_FIREAXE"
+			"item_class"	"TF_weapon_fireaxe"
 			"craft_class"	"weapon"
-			"item_type_name"	"#tf_Weapon_FireAxe"
-			"item_name"	"#tf_Weapon_FireAxe"
+			"item_type_name"	"#TF_Weapon_FireAxe"
+			"item_name"	"#TF_Weapon_FireAxe"
 			"item_slot"	"melee"
 			"item_quality"	"normal"
 			"baseitem" "1"
@@ -123,11 +123,11 @@
 		}
 		"3"
 		{
-			"name"	"tf_WEAPON_CLUB"
-			"item_class"	"tf_weapon_club"
+			"name"	"TF_WEAPON_CLUB"
+			"item_class"	"TF_weapon_club"
 			"craft_class"	"weapon"
-			"item_type_name"	"#tf_Weapon_Club"
-			"item_name"	"#tf_Weapon_Club"
+			"item_type_name"	"#TF_Weapon_Club"
+			"item_name"	"#TF_Weapon_Club"
 			"item_slot"	"melee"
 			"item_quality"	"normal"
 			"baseitem" "1"
@@ -147,11 +147,11 @@
 		}
 		"4"
 		{
-			"name"	"tf_WEAPON_KNIFE"
-			"item_class"	"tf_weapon_knife"
+			"name"	"TF_WEAPON_KNIFE"
+			"item_class"	"TF_weapon_knife"
 			"craft_class"	"weapon"
-			"item_type_name"	"#tf_Weapon_Knife"
-			"item_name"	"#tf_Weapon_Knife"
+			"item_type_name"	"#TF_Weapon_Knife"
+			"item_name"	"#TF_Weapon_Knife"
 			"item_slot"	"melee"
 			"item_quality"	"normal"
 			"baseitem" "1"
@@ -171,11 +171,11 @@
 		}
 		"5"
 		{
-			"name"	"tf_WEAPON_FISTS"
-			"item_class"	"tf_weapon_fists"
+			"name"	"TF_WEAPON_FISTS"
+			"item_class"	"TF_weapon_fists"
 			"craft_class"	"weapon"
-			"item_type_name"	"#tf_Weapon_Fists"
-			"item_name"	"#tf_Weapon_Fists"
+			"item_type_name"	"#TF_Weapon_Fists"
+			"item_name"	"#TF_Weapon_Fists"
 			"item_slot"	"melee"
 			"item_quality"	"normal"
 			"baseitem" "1"
@@ -221,11 +221,11 @@
 		}
 		"6"
 		{
-			"name"	"tf_WEAPON_SHOVEL"
-			"item_class"	"tf_weapon_shovel"
+			"name"	"TF_WEAPON_SHOVEL"
+			"item_class"	"TF_weapon_shovel"
 			"craft_class"	"weapon"
-			"item_type_name"	"#tf_Weapon_Shovel"
-			"item_name"	"#tf_Weapon_Shovel"
+			"item_type_name"	"#TF_Weapon_Shovel"
+			"item_name"	"#TF_Weapon_Shovel"
 			"item_slot"	"melee"
 			"item_quality"	"normal"
 			"baseitem" "1"
@@ -245,11 +245,11 @@
 		}
 		"7"
 		{
-			"name"	"tf_WEAPON_WRENCH"
-			"item_class"	"tf_weapon_wrench"
+			"name"	"TF_WEAPON_WRENCH"
+			"item_class"	"TF_weapon_wrench"
 			"craft_class"	"weapon"
-			"item_type_name"	"#tf_Weapon_Wrench"
-			"item_name"	"#tf_Weapon_Wrench"
+			"item_type_name"	"#TF_Weapon_Wrench"
+			"item_name"	"#TF_Weapon_Wrench"
 			"item_slot"	"melee"
 			"item_quality"	"normal"
 			"baseitem" "1"
@@ -269,11 +269,11 @@
 		}
 		"8"
 		{
-			"name"	"tf_WEAPON_BONESAW"
-			"item_class"	"tf_weapon_bonesaw"
+			"name"	"TF_WEAPON_BONESAW"
+			"item_class"	"TF_weapon_bonesaw"
 			"craft_class"	"weapon"
-			"item_type_name"	"#tf_Weapon_Bonesaw"
-			"item_name"	"#tf_Weapon_Bonesaw"
+			"item_type_name"	"#TF_Weapon_Bonesaw"
+			"item_name"	"#TF_Weapon_Bonesaw"
 			"item_slot"	"melee"
 			"item_quality"	"normal"
 			"baseitem" "1"
@@ -293,11 +293,11 @@
 		}
 		"9"
 		{
-			"name"	"tf_WEAPON_SHOTGUN_PRIMARY"
-			"item_class"	"tf_weapon_shotgun_primary"
+			"name"	"TF_WEAPON_SHOTGUN_PRIMARY"
+			"item_class"	"TF_weapon_shotgun_primary"
 			"craft_class"	"weapon"
-			"item_type_name"	"#tf_Weapon_Shotgun"
-			"item_name"	"#tf_Weapon_Shotgun"
+			"item_type_name"	"#TF_Weapon_Shotgun"
+			"item_name"	"#TF_Weapon_Shotgun"
 			"item_slot"	"primary"
 			"item_quality"	"normal"
 			"baseitem" "1"
@@ -323,11 +323,11 @@
 		}
 		"10"
 		{
-			"name"	"tf_WEAPON_SHOTGUN_SOLDIER"
-			"item_class"	"tf_weapon_shotgun_soldier"
+			"name"	"TF_WEAPON_SHOTGUN_SOLDIER"
+			"item_class"	"TF_weapon_shotgun_soldier"
 			"craft_class"	"weapon"
-			"item_type_name"	"#tf_Weapon_Shotgun"
-			"item_name"	"#tf_Weapon_Shotgun"
+			"item_type_name"	"#TF_Weapon_Shotgun"
+			"item_name"	"#TF_Weapon_Shotgun"
 			"item_slot"	"secondary"
 			"item_quality"	"normal"
 			"baseitem" "1"
@@ -353,12 +353,12 @@
 		}
 		"11"
 		{
-			"name"	"tf_WEAPON_SHOTGUN_HWG"
-			"item_class"	"tf_weapon_shotgun_hwg"
+			"name"	"TF_WEAPON_SHOTGUN_HWG"
+			"item_class"	"TF_weapon_shotgun_hwg"
 			"craft_class"	"weapon"
 			"tool_class"	"weapon"
-			"item_type_name"	"#tf_Weapon_Shotgun"
-			"item_name"	"#tf_Weapon_Shotgun"
+			"item_type_name"	"#TF_Weapon_Shotgun"
+			"item_name"	"#TF_Weapon_Shotgun"
 			"item_slot"	"secondary"
 			"item_quality"	"normal"
 			"baseitem" "1"
@@ -384,11 +384,11 @@
 		}
 		"12"
 		{
-			"name"	"tf_WEAPON_SHOTGUN_PYRO"
-			"item_class"	"tf_weapon_shotgun_pyro"
+			"name"	"TF_WEAPON_SHOTGUN_PYRO"
+			"item_class"	"TF_weapon_shotgun_pyro"
 			"craft_class"	"weapon"
-			"item_type_name"	"#tf_Weapon_Shotgun"
-			"item_name"	"#tf_Weapon_Shotgun"
+			"item_type_name"	"#TF_Weapon_Shotgun"
+			"item_name"	"#TF_Weapon_Shotgun"
 			"item_slot"	"secondary"
 			"item_quality"	"normal"
 			"baseitem" "1"
@@ -414,11 +414,11 @@
 		}
 		"13"
 		{
-			"name"	"tf_WEAPON_SCATTERGUN"
-			"item_class"	"tf_weapon_scattergun"
+			"name"	"TF_WEAPON_SCATTERGUN"
+			"item_class"	"TF_weapon_scattergun"
 			"craft_class"	"weapon"
-			"item_type_name"	"#tf_Weapon_Scattergun"
-			"item_name"	"#tf_Weapon_Scattergun"
+			"item_type_name"	"#TF_Weapon_Scattergun"
+			"item_name"	"#TF_Weapon_Scattergun"
 			"item_slot"	"primary"
 			"item_quality"	"normal"
 			"baseitem" "1"
@@ -443,11 +443,11 @@
 		}
 		"14"
 		{
-			"name"	"tf_WEAPON_SNIPERRIFLE"
-			"item_class"	"tf_weapon_sniperrifle"
+			"name"	"TF_WEAPON_SNIPERRIFLE"
+			"item_class"	"TF_weapon_sniperrifle"
 			"craft_class"	"weapon"
-			"item_type_name"	"#tf_Weapon_SniperRifle"
-			"item_name"	"#tf_Weapon_SniperRifle"
+			"item_type_name"	"#TF_Weapon_SniperRifle"
+			"item_name"	"#TF_Weapon_SniperRifle"
 			"item_slot"	"primary"
 			"item_quality"	"normal"
 			"baseitem" "1"
@@ -472,11 +472,11 @@
 		}
 		"15"
 		{
-			"name"	"tf_WEAPON_MINIGUN"
-			"item_class"	"tf_weapon_minigun"
+			"name"	"TF_WEAPON_MINIGUN"
+			"item_class"	"TF_weapon_minigun"
 			"craft_class"	"weapon"
-			"item_type_name"	"#tf_Weapon_Minigun"
-			"item_name"	"#tf_Weapon_Minigun"
+			"item_type_name"	"#TF_Weapon_Minigun"
+			"item_name"	"#TF_Weapon_Minigun"
 			"item_slot"	"primary"
 			"item_quality"	"normal"
 			"baseitem" "1"
@@ -501,11 +501,11 @@
 		}
 		"16"
 		{
-			"name"	"tf_WEAPON_SMG"
-			"item_class"	"tf_weapon_smg"
+			"name"	"TF_WEAPON_SMG"
+			"item_class"	"TF_weapon_smg"
 			"craft_class"	"weapon"
-			"item_type_name"	"#tf_Weapon_SMG"
-			"item_name"	"#tf_Weapon_SMG"
+			"item_type_name"	"#TF_Weapon_SMG"
+			"item_name"	"#TF_Weapon_SMG"
 			"item_slot"	"secondary"
 			"item_quality"	"normal"
 			"baseitem" "1"
@@ -530,11 +530,11 @@
 		}
 		"17"
 		{
-			"name"	"tf_WEAPON_SYRINGEGUN_MEDIC"
-			"item_class"	"tf_weapon_syringegun_medic"
+			"name"	"TF_WEAPON_SYRINGEGUN_MEDIC"
+			"item_class"	"TF_weapon_syringegun_medic"
 			"craft_class"	"weapon"
-			"item_type_name"	"#tf_Weapon_SyringeGun"
-			"item_name"	"#tf_Weapon_SyringeGun"
+			"item_type_name"	"#TF_Weapon_SyringeGun"
+			"item_name"	"#TF_Weapon_SyringeGun"
 			"item_slot"	"primary"
 			"item_quality"	"normal"
 			"baseitem" "1"
@@ -559,11 +559,11 @@
 		}
 		"18"
 		{
-			"name"	"tf_WEAPON_ROCKETLAUNCHER"
-			"item_class"	"tf_weapon_rocketlauncher"
+			"name"	"TF_WEAPON_ROCKETLAUNCHER"
+			"item_class"	"TF_weapon_rocketlauncher"
 			"craft_class"	"weapon"
-			"item_type_name"	"#tf_Weapon_RocketLauncher"
-			"item_name"	"#tf_Weapon_RocketLauncher"
+			"item_type_name"	"#TF_Weapon_RocketLauncher"
+			"item_name"	"#TF_Weapon_RocketLauncher"
 			"item_slot"	"primary"
 			"item_quality"	"normal"
 			"baseitem" "1"
@@ -588,11 +588,11 @@
 		}
 		"19"
 		{
-			"name"	"tf_WEAPON_GRENADELAUNCHER"
-			"item_class"	"tf_weapon_grenadelauncher"
+			"name"	"TF_WEAPON_GRENADELAUNCHER"
+			"item_class"	"TF_weapon_grenadelauncher"
 			"craft_class"	"weapon"
-			"item_type_name"	"#tf_Weapon_GrenadeLauncher"
-			"item_name"	"#tf_Weapon_GrenadeLauncher"
+			"item_type_name"	"#TF_Weapon_GrenadeLauncher"
+			"item_name"	"#TF_Weapon_GrenadeLauncher"
 			"item_slot"	"secondary"
 			"item_quality"	"normal"
 			"baseitem" "1"
@@ -617,11 +617,11 @@
 		}
 		"20"
 		{
-			"name"	"tf_WEAPON_PIPEBOMBLAUNCHER"
-			"item_class"	"tf_weapon_pipebomblauncher"
+			"name"	"TF_WEAPON_PIPEBOMBLAUNCHER"
+			"item_class"	"TF_weapon_pipebomblauncher"
 			"craft_class"	"weapon"
-			"item_type_name"	"#tf_Weapon_PipebombLauncher"
-			"item_name"	"#tf_Weapon_PipebombLauncher"
+			"item_type_name"	"#TF_Weapon_PipebombLauncher"
+			"item_name"	"#TF_Weapon_PipebombLauncher"
 			"item_slot"	"primary"
 			"item_quality"	"normal"
 			"baseitem" "1"
@@ -647,11 +647,11 @@
 		}
 		"21"
 		{
-			"name"	"tf_WEAPON_FLAMETHROWER"
-			"item_class"	"tf_weapon_flamethrower"
+			"name"	"TF_WEAPON_FLAMETHROWER"
+			"item_class"	"TF_weapon_flamethrower"
 			"craft_class"	"weapon"
-			"item_type_name"	"#tf_Weapon_FlameThrower"
-			"item_name"	"#tf_Weapon_FlameThrower"
+			"item_type_name"	"#TF_Weapon_FlameThrower"
+			"item_name"	"#TF_Weapon_FlameThrower"
 			"item_slot"	"primary"
 			"item_quality"	"normal"
 			"baseitem" "1"
@@ -671,11 +671,11 @@
 		}
 		"22"
 		{
-			"name"	"tf_WEAPON_PISTOL"
-			"item_class"	"tf_weapon_pistol"
+			"name"	"TF_WEAPON_PISTOL"
+			"item_class"	"TF_weapon_pistol"
 			"craft_class"	"weapon"
-			"item_type_name"	"#tf_Weapon_Pistol"
-			"item_name"	"#tf_Weapon_Pistol"
+			"item_type_name"	"#TF_Weapon_Pistol"
+			"item_name"	"#TF_Weapon_Pistol"
 			"item_slot"	"secondary"
 			"item_quality"	"normal"
 			"baseitem" "1"
@@ -701,11 +701,11 @@
 		}
 		"23"
 		{
-			"name"	"tf_WEAPON_PISTOL_SCOUT"
-			"item_class"	"tf_weapon_pistol_scout"
+			"name"	"TF_WEAPON_PISTOL_SCOUT"
+			"item_class"	"TF_weapon_pistol_scout"
 			"craft_class"	"weapon"
-			"item_type_name"	"#tf_Weapon_Pistol"
-			"item_name"	"#tf_Weapon_Pistol"
+			"item_type_name"	"#TF_Weapon_Pistol"
+			"item_name"	"#TF_Weapon_Pistol"
 			"item_slot"	"secondary"
 			"item_quality"	"normal"
 			"baseitem" "1"
@@ -731,11 +731,11 @@
 		}
 		"24"
 		{
-			"name"	"tf_WEAPON_REVOLVER"
-			"item_class"	"tf_weapon_revolver"
+			"name"	"TF_WEAPON_REVOLVER"
+			"item_class"	"TF_weapon_revolver"
 			"craft_class"	"weapon"
-			"item_type_name"	"#tf_Weapon_Revolver"
-			"item_name"	"#tf_Weapon_Revolver"
+			"item_type_name"	"#TF_Weapon_Revolver"
+			"item_name"	"#TF_Weapon_Revolver"
 			"item_slot"	"secondary"
 			"item_quality"	"normal"
 			"baseitem" "1"
@@ -760,11 +760,11 @@
 		}
 		"25"
 		{
-			"name"	"tf_WEAPON_PDA_ENGINEER_BUILD"
-			"item_class"	"tf_weapon_pda_engineer_build"
+			"name"	"TF_WEAPON_PDA_ENGINEER_BUILD"
+			"item_class"	"TF_weapon_pda_engineer_build"
 			"craft_class"	"weapon"
-			"item_type_name"	"#tf_Weapon_PDA_Engineer"
-			"item_name"	"#tf_Weapon_PDA_Engineer"
+			"item_type_name"	"#TF_Weapon_PDA_Engineer"
+			"item_name"	"#TF_Weapon_PDA_Engineer"
 			"item_slot"	"pda"
 			"item_quality"	"normal"
 			"baseitem" "1"
@@ -796,11 +796,11 @@
 		}
 		"26"
 		{
-			"name"	"tf_WEAPON_PDA_ENGINEER_DESTROY"
-			"item_class"	"tf_weapon_pda_engineer_destroy"
+			"name"	"TF_WEAPON_PDA_ENGINEER_DESTROY"
+			"item_class"	"TF_weapon_pda_engineer_destroy"
 			"craft_class"	"weapon"
-			"item_type_name"	"#tf_Weapon_PDA_Engineer"
-			"item_name"	"#tf_Weapon_PDA_Engineer"
+			"item_type_name"	"#TF_Weapon_PDA_Engineer"
+			"item_name"	"#TF_Weapon_PDA_Engineer"
 			"item_slot"	"pda2"
 			"item_quality"	"normal"
 			"baseitem" "1"
@@ -832,11 +832,11 @@
 		}
 		"27"
 		{
-			"name"	"tf_WEAPON_PDA_SPY"
-			"item_class"	"tf_weapon_pda_spy"
+			"name"	"TF_WEAPON_PDA_SPY"
+			"item_class"	"TF_weapon_pda_spy"
 			"craft_class"	"weapon"
-			"item_type_name"	"#tf_Weapon_PDA_Engineer"
-			"item_name"	"#tf_Weapon_PDA_Engineer"
+			"item_type_name"	"#TF_Weapon_PDA_Engineer"
+			"item_name"	"#TF_Weapon_PDA_Engineer"
 			"item_slot"	"pda"
 			"item_quality"	"normal"
 			"baseitem" "1"
@@ -853,11 +853,11 @@
 		}
 		"28"
 		{
-			"name"	"tf_WEAPON_BUILDER"
-			"item_class"	"tf_weapon_builder"
+			"name"	"TF_WEAPON_BUILDER"
+			"item_class"	"TF_weapon_builder"
 			"craft_class"	"weapon"
-			"item_type_name"	"#tf_Weapon_PDA_Engineer"
-			"item_name"	"#tf_Weapon_PDA_Engineer"
+			"item_type_name"	"#TF_Weapon_PDA_Engineer"
+			"item_name"	"#TF_Weapon_PDA_Engineer"
 			"item_slot"	"building"
 			"item_quality"	"normal"
 			"baseitem" "1"
@@ -890,11 +890,11 @@
 		}
 		"29"
 		{
-			"name"	"tf_WEAPON_MEDIGUN"
-			"item_class"	"tf_weapon_medigun"
+			"name"	"TF_WEAPON_MEDIGUN"
+			"item_class"	"TF_weapon_medigun"
 			"craft_class"	"weapon"
-			"item_type_name"	"#tf_Weapon_Medigun"
-			"item_name"	"#tf_Weapon_Medigun"
+			"item_type_name"	"#TF_Weapon_Medigun"
+			"item_name"	"#TF_Weapon_Medigun"
 			"item_slot"	"secondary"
 			"item_quality"	"normal"
 			"baseitem" "1"
@@ -914,11 +914,11 @@
 		}
 		"30"
 		{
-			"name"	"tf_WEAPON_INVIS"
-			"item_class"	"tf_weapon_invis"
+			"name"	"TF_WEAPON_INVIS"
+			"item_class"	"TF_weapon_invis"
 			"craft_class"	"weapon"
-			"item_type_name"	"#tf_Weapon_Watch"
-			"item_name"	"#tf_Weapon_Watch"
+			"item_type_name"	"#TF_Weapon_Watch"
+			"item_name"	"#TF_Weapon_Watch"
 			"item_slot"	"pda2"
 			"anim_slot" "FORCE_NOT_USED"
 			"item_quality"	"normal"
@@ -939,15 +939,15 @@
 		"31"
 		{
 			"name"	"The Nailgun"
-			"item_class"	"tf_weapon_nailgun"
+			"item_class"	"TF_weapon_nailgun"
 			"capabilities"
 			{
 				"nameable"		"1"
 				"can_gift_wrap" 	"1"
 			}
 			"show_in_armory"	"0"
-			"item_type_name"	"#tf_Weapon_Pistol"
-			"item_name"	"#tf_Weapon_Nailgun"
+			"item_type_name"	"#TF_Weapon_Pistol"
+			"item_name"	"#TF_Weapon_Nailgun"
 			"item_description"	""
 			"item_slot"	"primary"
 			"item_logname"	"nailgun"
@@ -988,8 +988,8 @@
 		}
 		"1155"
 		{
-			"name"	"tf_WEAPON_PASSTIME_GUN"
-			"item_class"	"tf_weapon_passtime_gun"
+			"name"	"TF_WEAPON_PASSTIME_GUN"
+			"item_class"	"TF_weapon_passtime_gun"
 			"craft_class"	""	
 			"craft_material_type"	"" 
 			"item_type_name"	"#Weapon_Passtime_Gun"
@@ -3924,7 +3924,7 @@
 	{
 		"polycount_pyro"
 		{
-			"name"	"#tf_Set_Polycount_Pyro"
+			"name"	"#TF_Set_Polycount_Pyro"
 			"items"
 			{
 				"The Degreaser"		"1"
@@ -3948,7 +3948,7 @@
 		}
 		"polycount_spy"
 		{
-			"name"	"#tf_Set_Polycount_Spy"
+			"name"	"#TF_Set_Polycount_Spy"
 			"items"
 			{
 				"L'Etranger"		"1"
@@ -3972,7 +3972,7 @@
 		}
 		"polycount_soldier"
 		{
-			"name"	"#tf_Set_Polycount_Soldier"
+			"name"	"#TF_Set_Polycount_Soldier"
 			"items"
 			{
 				"The Black Box"			"1"
@@ -3991,7 +3991,7 @@
 		}
 		"polycount_sniper"
 		{
-			"name" "#tf_Set_Polycount_Sniper"
+			"name" "#TF_Set_Polycount_Sniper"
 			"items"
 			{
 				"The Sydney Sleeper"		"1"
@@ -4011,7 +4011,7 @@
 		}
 		"polycount_scout"
 		{
-			"name"	"#tf_Set_Polycount_Scout"
+			"name"	"#TF_Set_Polycount_Scout"
 			"items"
 			{
 				"The Shortstop"		"1"
@@ -4031,7 +4031,7 @@
 		}
 		"medieval_medic"
 		{
-			"name"	"#tf_Set_Medieval_Medic"
+			"name"	"#TF_Set_Medieval_Medic"
 			"items"
 			{
 				"The Amputator"			"1"
@@ -4049,7 +4049,7 @@
 		}
 		"hibernating_bear"
 		{
-			"name"	"#tf_Set_Hibernating_Bear"
+			"name"	"#TF_Set_Hibernating_Bear"
 			"items"
 			{
 				"The Brass Beast"		"1"
@@ -4068,7 +4068,7 @@
 		}
 		"experts_ordnance"
 		{
-			"name"	"#tf_Set_Experts_Ordnance"
+			"name"	"#TF_Set_Experts_Ordnance"
 			"items"
 			{
 				"The Ullapool Caber"		"1"
@@ -4087,38 +4087,38 @@
 	}
 	"achievement_rewards"
 	{
-		"tf_MEDIC_ACHIEVE_PROGRESS1"	"36"
-		"tf_MEDIC_ACHIEVE_PROGRESS2"	"35"
-		"tf_MEDIC_ACHIEVE_PROGRESS3"	"37"
-		"tf_PYRO_ACHIEVE_PROGRESS1"	"39"
-		"tf_PYRO_ACHIEVE_PROGRESS2"	"40"
-		"tf_PYRO_ACHIEVE_PROGRESS3"	"38"
-		"tf_HEAVY_ACHIEVE_PROGRESS1"	"42"
-		"tf_HEAVY_ACHIEVE_PROGRESS2"	"41"
-		"tf_HEAVY_ACHIEVE_PROGRESS3"	"43"
-		"tf_SCOUT_ACHIEVE_PROGRESS1"	"45"
-		"tf_SCOUT_ACHIEVE_PROGRESS2"	"44"
-		"tf_SCOUT_ACHIEVE_PROGRESS3"	"46"
-		"tf_SNIPER_ACHIEVE_PROGRESS1"	"56"
-		"tf_SNIPER_ACHIEVE_PROGRESS2"	"58"
-		"tf_SNIPER_ACHIEVE_PROGRESS3"	"57"
-		"tf_SPY_ACHIEVE_PROGRESS1"	"61"
-		"tf_SPY_ACHIEVE_PROGRESS2"	"60"
-		"tf_SPY_ACHIEVE_PROGRESS3"	"59"
-		"tf_SOLDIER_ACHIEVE_PROGRESS1"	"128"
-		"tf_SOLDIER_ACHIEVE_PROGRESS2"	"127"
-		"tf_SOLDIER_ACHIEVE_PROGRESS3"	"129"
-		"tf_DEMOMAN_ACHIEVE_PROGRESS1"	"131"
-		"tf_DEMOMAN_ACHIEVE_PROGRESS2"	"132"
-		"tf_DEMOMAN_ACHIEVE_PROGRESS3"	"130"
-		"tf_ENGINEER_ACHIEVE_PROGRESS1" "141"
-		"tf_ENGINEER_ACHIEVE_PROGRESS2" "142"
-		"tf_ENGINEER_ACHIEVE_PROGRESS3" "140"
-		"tf_HALLOWEEN_DOMINATE_FOR_HAT" "279"
-		"tf_HALLOWEEN_BOSS_KILL"	"278"
-		"tf_HALLOWEEN_BOSS_KILL_MELEE"	"267"
-		"tf_HALLOWEEN_COLLECT_PUMPKINS"	"115"
-		"tf_GENERAL_KILL_ENEMIES_AFTER_TELEPORTING" "5500"
+		"TF_MEDIC_ACHIEVE_PROGRESS1"	"36"
+		"TF_MEDIC_ACHIEVE_PROGRESS2"	"35"
+		"TF_MEDIC_ACHIEVE_PROGRESS3"	"37"
+		"TF_PYRO_ACHIEVE_PROGRESS1"	"39"
+		"TF_PYRO_ACHIEVE_PROGRESS2"	"40"
+		"TF_PYRO_ACHIEVE_PROGRESS3"	"38"
+		"TF_HEAVY_ACHIEVE_PROGRESS1"	"42"
+		"TF_HEAVY_ACHIEVE_PROGRESS2"	"41"
+		"TF_HEAVY_ACHIEVE_PROGRESS3"	"43"
+		"TF_SCOUT_ACHIEVE_PROGRESS1"	"45"
+		"TF_SCOUT_ACHIEVE_PROGRESS2"	"44"
+		"TF_SCOUT_ACHIEVE_PROGRESS3"	"46"
+		"TF_SNIPER_ACHIEVE_PROGRESS1"	"56"
+		"TF_SNIPER_ACHIEVE_PROGRESS2"	"58"
+		"TF_SNIPER_ACHIEVE_PROGRESS3"	"57"
+		"TF_SPY_ACHIEVE_PROGRESS1"	"61"
+		"TF_SPY_ACHIEVE_PROGRESS2"	"60"
+		"TF_SPY_ACHIEVE_PROGRESS3"	"59"
+		"TF_SOLDIER_ACHIEVE_PROGRESS1"	"128"
+		"TF_SOLDIER_ACHIEVE_PROGRESS2"	"127"
+		"TF_SOLDIER_ACHIEVE_PROGRESS3"	"129"
+		"TF_DEMOMAN_ACHIEVE_PROGRESS1"	"131"
+		"TF_DEMOMAN_ACHIEVE_PROGRESS2"	"132"
+		"TF_DEMOMAN_ACHIEVE_PROGRESS3"	"130"
+		"TF_ENGINEER_ACHIEVE_PROGRESS1" "141"
+		"TF_ENGINEER_ACHIEVE_PROGRESS2" "142"
+		"TF_ENGINEER_ACHIEVE_PROGRESS3" "140"
+		"TF_HALLOWEEN_DOMINATE_FOR_HAT" "279"
+		"TF_HALLOWEEN_BOSS_KILL"	"278"
+		"TF_HALLOWEEN_BOSS_KILL_MELEE"	"267"
+		"TF_HALLOWEEN_COLLECT_PUMPKINS"	"115"
+		"TF_GENERAL_KILL_ENEMIES_AFTER_TELEPORTING" "5500"
 		"ASW_PARA_HAT"
 		{ 
 			"SourceAppID"	"630"

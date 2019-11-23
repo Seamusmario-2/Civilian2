@@ -444,7 +444,7 @@ function GM:DoPlayerDeath(ply, attacker, dmginfo)
 	end
 	if ply:HasDeathFlag(DF_HEADSHOT) and not ply:IsHL2() then
 		ply:RandomSentence("CritDeath")
-		ply:EmitSound("TFPlayer.Decapitated")
+		ply:EmitSound("player/flow.wav", 95, math.random(83, 128))
 		ply:Decap()
 		local animent = ents.Create( 'base_gmodentity' ) -- The entity used for the death animation	
 		animent:SetModel(ply:GetModel())
@@ -496,7 +496,7 @@ function GM:DoPlayerDeath(ply, attacker, dmginfo)
 	end		
 	if ply:HasDeathFlag(DF_DECAP) and not ply:IsHL2() then
 		ply:RandomSentence("CritDeath")
-		inflictor:EmitSound("TFPlayer.Decapitated")
+		ply:EmitSound("player/flow.wav", 95)
 		ply:Decap()
 		local animent = ents.Create( 'base_gmodentity' ) -- The entity used for the death animation	
 		animent:SetModel(ply:GetModel())

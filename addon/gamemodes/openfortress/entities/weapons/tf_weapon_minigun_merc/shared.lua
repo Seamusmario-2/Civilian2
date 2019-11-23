@@ -91,7 +91,7 @@ end
 
 SWEP.Base				= "tf_weapon_gun_base"
 
-SWEP.ViewModel			= "models/weapons/v_models/v_minigun_merc.mdl"
+SWEP.ViewModel			= "models/weapons/v_models/v_minigun_heavy.mdl"
 SWEP.WorldModel			= "models/weapons/w_models/w_minigun.mdl"
 SWEP.Crosshair = "tf_crosshair4"
 
@@ -99,10 +99,10 @@ SWEP.Spawnable = true
 SWEP.AdminSpawnable = false
 SWEP.Category = "Team Fortress 2"
 
-SWEP.MuzzleEffect = "muzzle_minigun_constant"
+SWEP.MuzzleEffect = "muzzle_minigun"
 SWEP.MuzzleOffset = Vector(20, 3, -10)
 SWEP.TracerEffect = "bullet_tracer01"
-PrecacheParticleSystem("muzzle_minigun_constant")
+PrecacheParticleSystem("muzzle_minigun")
 PrecacheParticleSystem("bullet_tracer01_red")
 PrecacheParticleSystem("bullet_tracer01_red_crit")
 PrecacheParticleSystem("bullet_tracer01_blue")
@@ -124,7 +124,7 @@ SWEP.Secondary.Delay          = 0.1
 
 SWEP.IsRapidFire = true
 
-SWEP.HoldType = "ITEM2"
+SWEP.HoldType = "PRIMARY"
 SWEP.HoldTypeHL2 = "crossbow"
 
 SWEP.ReloadSound = Sound("Weapon_Minigun.Reload")
@@ -154,7 +154,7 @@ function SWEP:SpinUp()
 	
 	--self.Owner:SetAnimation(10004)
 	
-	if self.Owner:GetPlayerClass() != "merc_dm" then
+	if self.Owner:GetPlayerClass() != "mercenary" then
 		self.Owner:DoAnimationEvent(ACT_MP_ATTACK_STAND_PREFIRE, true)
 		self:SendWeaponAnim(ACT_MP_ATTACK_STAND_PREFIRE)
 	end

@@ -369,6 +369,7 @@ function GM:PlayerSpawn(ply)
 		ply:SetEyeAngles(ply.CPAng)
 	end 
 	ply:SetNoCollideWithTeammates( true )
+	ply:EmitSound("player/spawn.wav", 95, 100)
 	if ply:GetPlayerClass() == "soldierbuffed" then 
 		timer.Simple(0.8, function()
 			ply:SelectWeapon("tf_weapon_buff_item_conch")

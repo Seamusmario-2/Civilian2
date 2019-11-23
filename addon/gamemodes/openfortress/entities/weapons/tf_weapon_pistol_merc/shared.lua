@@ -52,3 +52,16 @@ SWEP.IsRapidFire = true
 function SWEP:InspectAnimCheck()
 
 end
+
+function SWEP:Reload()
+	if not self:CallBaseFunction("Reload") then return end
+	
+	self.Owner:DoAnimationEvent(ACT_MERC_RELOAD_STAND_PISTOL_MERCENARY)
+	
+end
+
+function SWEP:PrimaryAttack()
+	if not self:CallBaseFunction("PrimaryAttack") then return end
+	self.Owner:DoAnimationEvent(ACT_MERC_ATTACK_STAND_PISTOL_MERCENARY)
+	return
+end

@@ -83,7 +83,7 @@ PrecacheParticleSystem("pyro_blast_warp2")
 
 SWEP.Base				= "tf_weapon_gun_base"
 
-SWEP.ViewModel			= "models/weapons/v_models/v_flamethrower_merc.mdl"
+SWEP.ViewModel			= "models/weapons/v_models/v_flamethrower_pyro.mdl"
 SWEP.WorldModel			= "models/weapons/c_models/c_flamethrower/c_flamethrower.mdl"
 SWEP.Crosshair = "tf_crosshair3"
 
@@ -103,7 +103,7 @@ SWEP.AirblastSound = Sound("Weapon_FlameThrower.AirBurstAttack")
 SWEP.AirblastDeflectSound = Sound("Weapon_FlameThrower.AirBurstAttackDeflect")
 
 SWEP.Primary.ClipSize		= -1
-SWEP.Primary.Ammo			= TF_SECONDARY
+SWEP.Primary.Ammo			= TF_PRIMARY
 SWEP.Primary.Delay          = 0.04
 
 SWEP.Secondary.Automatic	= true

@@ -83,7 +83,7 @@ PrecacheParticleSystem("pyro_blast_warp2")
 
 SWEP.Base				= "tf_weapon_gun_base"
 
-SWEP.ViewModel			= "models/weapons/v_models/v_flamethrower.mdl"
+SWEP.ViewModel			= "models/weapons/v_models/v_flamethrower_pyro.mdl"
 SWEP.WorldModel			= "models/weapons/c_models/c_flamethrower/c_flamethrower.mdl"
 SWEP.Crosshair = "tf_crosshair3"
 
@@ -289,7 +289,6 @@ end
 
 function SWEP:Think()
 	self:TFViewModelFOV()
-
 	if SERVER and self.NextReplayDeployAnim then
 		if CurTime() > self.NextReplayDeployAnim then
 			--MsgFN("Replaying deploy animation %d", self.VM_DRAW)

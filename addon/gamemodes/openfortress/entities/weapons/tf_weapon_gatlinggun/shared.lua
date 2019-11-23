@@ -165,8 +165,8 @@ function SWEP:SpinUp()
 	
 	self.Spinning = true
 	
-	self.NextEndSpinUp = CurTime() + 0.4 * (self.MinigunSpinupMultiplier or 1)
-	self.NextEndSpinUpSound = CurTime() + 0.4
+	self.NextEndSpinUp = CurTime() + 1 * (self.MinigunSpinupMultiplier or 1)
+	self.NextEndSpinUpSound = CurTime() + 1
 	self.NextEndSpinDown = nil
 	self.NextIdle = nil
 	
